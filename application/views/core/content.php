@@ -131,90 +131,67 @@
 	<div class="container features">
 		<h1 class="section-title">My professional career</h1>
 		<div class="row">
-			<ul class="timeline">
-				<li class="timeline-inverted scrollimation fade-right">
-					<div class="timeline-badge">
-						<i class="fa fa-search"></i>
-					</div>
-					<div class="timeline-panel">
-						<div class="timeline-heading">
-							<h4 class="timeline-title"><b>Looking for a career</b></h4>
-							<p>
-							<small class="text-muted">
-							<i class="fa fa-clock-o"></i>
-							February, 2009 to October, 2011
-							</small>
-							</p>
-						</div>
-						<div class="timeline-body">
-							<p>
-							I was 16 when a got my first job, I was a teacher's assistant on many courses,
-							like excel, fireworks, corelDRAW, photoshop.
-							At this jobs I learned a lot and met important people to my career.
-							I kept this job for about 7 month, until I started a course about computer maintenance.
-							At this course my teacher invited me to work in his computer store,
-							I stayed there for about 6 month and realized that computer maintenance isn't my bussines.
-							After that, my friend's brother in law, heard that I worked with photoshop and coreldraw,
-							he has a design company and invited me to work with him,
-							I liked it a lot and my corelDRAW's skills got much better.
-							</p>
-						</div>
-					</div>
-				</li>
-				<li class="scrollimation fade-right">
+			<ul class="timeline">				
+
+				<li class="timeline scrollimation fade-right">
 					<div class="timeline-badge warning">
-						<i class="icon-c"></i>
+						<i class="fa fa-thumbs-o-up"></i>
 					</div>
 					<div class="timeline-panel">
 						<div class="timeline-heading">
-							<h4 class="timeline-title"><b>Trainee | </b><small>Intelbras - R&D ICON </small></h4>
+							<h4 class="timeline-title"><b>Founder and Software developer | </b><small>Workedin</small></h4>
 							<p>
 							<small class="text-muted">
 							<i class="fa fa-clock-o"></i>
-							November 2011
+							December, 2014
 							</small>
 							</p>
 						</div>
 						<div class="timeline-body">
 							<p>
-							This internship was great to me, I learned from some great guys.
-							My main function was validation of a DECT platform into the telephone TS60,
-							it was my first contact with software development,
-							even not doing any kind of development, I thought...
-							I really like it and some day I'm gonna develop like this guys.
-							So, I went to a library, took  the <b>C completo e total</b> book
-							and started learning C programming.
+								At december 2014, I with more 4 friends started a startup together,
+								It was and still is a great experience in work together.
+								In less than 2 months we developed all software, business strategies
+								and we opened our own company.
+								It was my moment, because it wasn't the first company that I tried to open,
+								but the first that I really did.
+							</p>
+							<p align="center">
+								<a target="_blank" href="http://www.workedin.com.br">www.workedin.com.br</a>
 							</p>
 						</div>
 					</div>
 				</li>
+
 				<li class="timeline-inverted scrollimation fade-right">
-					<div class="timeline-badge">
-						<i class="icon-freebsd"></i>
+					<div class="timeline-badge success">
+						<i class="icon-python"></i>
 					</div>
 					<div class="timeline-panel">
 						<div class="timeline-heading">
-							<h4 class="timeline-title"><b>Product validator | </b><small>Intelbras - R&D INET</small></h4>
+							<h4 class="timeline-title"><b>Software developer | </b><small>Intelbras - R&D Wireless Indoor</small></h4>
 							<p>
 							<small class="text-muted">
 							<i class="fa fa-clock-o"></i>
-							November 2012
+							January, 2014
 							</small>
 							</p>
 						</div>
 						<div class="timeline-body">
 							<p>
-							I was finishing my Technical course in networks and was trying to learn more about this through a job,
-							and I found a perfect one. The main function of a Product validator is test all
-							features in many scenarios to approve or not the product.
-							At this time I was learning a lot about <b>GNU/Linux</b> and <b>FreeBSD</b>
-							system to improve my tests and also making some scripts in bash or perl.
-							It was a great time and I learned a lot about network and its protocols.
-							Nowadays I use this knowledge to make better softwares.
+							My current job, after learning a lot about networks, programming,
+							operating system and just as important as, the users needs,
+							agile development methodologies and startup's culture. I was prepared to work with software development, and to my happiness,
+							a new department was created and I was invited to work with them.
+							So, I have been working with a django platform to develop a wireless control management,
+							this software has tested me a lot, because I need to use all my knowledge at
+							Linux system and networks protocols, besides back-end and front-end programming.
+							I'm happy here, but I'm always looking for new challenges to increase my knowledge.
 							</p>
 						</div>
 					</div>
 				</li>
+
 				<li class="scrollimation fade-right">
 					<div class="timeline-badge warning">
 						<i class="fa fa-users"></i>
@@ -245,34 +222,97 @@
 						</div>
 					</div>
 				</li>
+
 				<li class="timeline-inverted scrollimation fade-right">
-					<div class="timeline-badge success">
-						<i class="icon-python"></i>
+					<div class="timeline-badge danger">
+						<i class="icon-freebsd"></i>
 					</div>
 					<div class="timeline-panel">
 						<div class="timeline-heading">
-							<h4 class="timeline-title"><b>Software developer | </b><small>Intelbras - R&D Wireless Indoor</small></h4>
+							<h4 class="timeline-title"><b>Product validator | </b><small>Intelbras - R&D INET</small></h4>
 							<p>
 							<small class="text-muted">
 							<i class="fa fa-clock-o"></i>
-							January, 2014
+							November 2012
 							</small>
 							</p>
 						</div>
 						<div class="timeline-body">
 							<p>
-							My current job, after learning a lot about networks, programming,
-							operating system and just as important as, the users needs,
-							agile development methodologies and startup's culture. I was prepared to work with software development, and to my happiness,
-							a new department was created and I was invited to work with them.
-							So, I have been working with a django platform to develop a wireless control management,
-							this software has tested me a lot, because I need to use all my knowledge at
-							Linux system and networks protocols, besides back-end and front-end programming.
-							I'm happy here, but I'm always looking for new challenges to increase my knowledge.
+							I was finishing my Technical course in networks and was trying to learn more about this through a job,
+							and I found a perfect one. The main function of a Product validator is test all
+							features in many scenarios to approve or not the product.
+							At this time I was learning a lot about <b>GNU/Linux</b> and <b>FreeBSD</b>
+							system to improve my tests and also making some scripts in bash or perl.
+							It was a great time and I learned a lot about network and its protocols.
+							Nowadays I use this knowledge to make better softwares.
+							</p>
+						</div>
+					</div>
+				</li>				
+
+				<li class="scrollimation fade-right">
+					<div class="timeline-badge warning">
+						<i class="icon-c"></i>
+					</div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h4 class="timeline-title"><b>Trainee | </b><small>Intelbras - R&D ICON </small></h4>
+							<p>
+							<small class="text-muted">
+							<i class="fa fa-clock-o"></i>
+							November 2011
+							</small>
+							</p>
+						</div>
+						<div class="timeline-body">
+							<p>
+							This internship was great to me, I learned from some great guys.
+							My main function was validation of a DECT platform into the telephone TS60,
+							it was my first contact with software development,
+							even not doing any kind of development, I thought...
+							I really like it and some day I'm gonna develop like this guys.
+							So, I went to a library, took  the <b>C completo e total</b> book
+							and started learning C programming.
 							</p>
 						</div>
 					</div>
 				</li>
+				<li class="timeline-inverted scrollimation fade-right">
+					<div class="timeline-badge">
+						<i class="fa fa-search"></i>
+					</div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h4 class="timeline-title"><b>Looking for a career</b></h4>
+							<p>
+							<small class="text-muted">
+							<i class="fa fa-clock-o"></i>
+							February, 2009 to October, 2011
+							</small>
+							</p>
+						</div>
+						<div class="timeline-body">
+							<p>
+							I was 16 when a got my first job, I was a teacher's assistant on many courses,
+							like excel, fireworks, corelDRAW, photoshop.
+							At this jobs I learned a lot and met important people to my career.
+							I kept this job for about 7 month, until I started a course about computer maintenance.
+							At this course my teacher invited me to work in his computer store,
+							I stayed there for about 6 month and realized that computer maintenance isn't my bussines.
+							After that, my friend's brother in law, heard that I worked with photoshop and coreldraw,
+							he has a design company and invited me to work with him,
+							I liked it a lot and my corelDRAW's skills got much better.
+							</p>
+						</div>
+					</div>
+				</li>
+
+
+
+
+
+
 			</ul>
 			<!-- </div> -->
 		</div>
@@ -310,7 +350,7 @@
 				if you want, please add me in linkedin or send-me an email
 				to talk about software development, or ride a bicycle together someday.
 				</p>
-				<a class="btn btn-warning" href="#"><i class="fa fa-arrow-down"></i>
+				<a target="_blank" class="btn btn-warning" href="https://drive.google.com/file/d/0B64fnH-n5_qpTF8zOEVfQTQ5Z3M/view?usp=sharing"><i class="fa fa-arrow-down"></i>
 				Download</a>
 			</div>
 		</div>
