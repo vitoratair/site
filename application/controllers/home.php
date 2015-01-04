@@ -21,8 +21,8 @@ class Home extends CI_Controller {
 		$config['smtp_host']	= 'ssl://smtp.gmail.com';
 		$config['smtp_port']	= '465';
 		$config['smtp_timeout']	= '7';
-		$config['smtp_user']	= '******'; //replace before commit
-		$config['smtp_pass']	= '******';	//replace before commit
+		$config['smtp_user']	= EMAIL_USER;
+		$config['smtp_pass']	= EMAIL_PASS;
 		$config['charset']	= 'utf-8';
 		$config['newline']	= "\r\n";
 		$config['mailtype']	= 'html';
