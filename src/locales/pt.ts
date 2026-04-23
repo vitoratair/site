@@ -23,7 +23,7 @@ export const messages = {
       "Atuo como pessoa jurídica (CNPJ) no Brasil, aberto a projetos sob demanda: produto, backend e soluções com IA.",
       "Forte em Python/Django e em desenho de fluxos com LLMs, RAG e agentes com ferramentas.",
     ],
-    tags: ["Python", "Django", "LLM", "RAG", "Agentes", "APIs", "TypeScript", "Linux"],
+    tags: ["Python", "Django", "FastAPI", "TypeScript", "LLM", "RAG", "Docker", "Postgres"],
     cards: [
       {
         title: "Stack",
@@ -173,28 +173,36 @@ export const messages = {
   ],
 
   skillsIntro:
-    "Tecnologias que uso no dia a dia e em projetos com clientes — incluindo stacks para serviços com IA.",
+    "Stack que uso em produção e com clientes — de APIs e dados a interfaces modernas e serviços com IA.",
 
   skills: [
     {
-      title: "Python & Django",
-      body: "Stack principal para APIs e produtos web maduros: ORM, admin, auth, testes e deploy previsível.",
+      title: "Python, Django & FastAPI",
+      body: "Produtos web e APIs estáveis com Django (ORM, admin, auth, testes). FastAPI quando o contrato OpenAPI, performance async ou integrações em tempo real pesam mais.",
     },
     {
-      title: "IA, LLM e agentes",
-      body: "Integração de modelos de linguagem em produto: RAG, prompts versionados, ferramentas e avaliação; cuidado com custo, latência e privacidade.",
+      title: "IA aplicada: LLM, RAG e agentes",
+      body: "RAG e bases vectoriais, tool-calling e agentes (incl. MCP onde o ecossistema já expõe ferramentas), saídas estruturadas, avaliação e guardrails — sempre com olho em custo, latência e privacidade.",
     },
     {
-      title: "GIT & GitHub",
-      body: "Fluxos com branches curtas, code review e CI simples para equipas pequenas ou projetos solo com disciplina.",
+      title: "TypeScript, React & Vite",
+      body: "Interfaces e SPAs com ecossistema atual: componentes reutilizáveis, tipagem forte e build rápido; alinhamento com equipas de produto e design systems quando existem.",
     },
     {
-      title: "HTML, CSS & front pragmático",
-      body: "Interfaces limpas quando o projeto não traz designer dedicado; integração com APIs e preocupação com acessibilidade básica.",
+      title: "Postgres, dados & mensageria",
+      body: "Modelagem relacional, migrações e consultas eficientes; filas, jobs agendados e webhooks para desacoplar serviços e integrar sistemas legados.",
     },
     {
-      title: "Linux & redes",
-      body: "Contexto de sistemas e protocolos herdado de anos em I&D — útil para depuração, integrações e ambientes de execução.",
+      title: "Docker, CI/CD & cloud pragmática",
+      body: "Imagens reprodutíveis, pipelines em GitHub Actions (ou similares) e deploy em cloud ou VPS; configuração 12-factor, secrets e health checks.",
+    },
+    {
+      title: "Observabilidade & APIs resilientes",
+      body: "Logging estruturado, tracing e métricas leves onde importa; timeouts, retries idempotentes, rate limits e contratos de API claros para serviços expostos.",
+    },
+    {
+      title: "Git, Linux & redes",
+      body: "Branches curtas, revisão de código e releases previsíveis; fundo em Linux e rede útil para depurar integrações, containers e ambientes híbridos.",
     },
   ],
 
