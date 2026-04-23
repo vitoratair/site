@@ -1,4 +1,5 @@
 import { useMessages } from "../i18n/context";
+import { Reveal } from "./Reveal";
 import { SectionIntro } from "./SectionIntro";
 
 export function Contact() {
@@ -32,11 +33,12 @@ export function Contact() {
           align="center"
         />
       </div>
-      <form
-        action={formAction}
-        method="POST"
-        className="relative mx-auto mt-14 max-w-xl space-y-5 rounded-2xl border border-slate-500/35 bg-slate-800/65 p-6 shadow-xl shadow-black/25 backdrop-blur-md ring-1 ring-violet-400/15 sm:p-8"
-      >
+      <Reveal className="relative mx-auto mt-14 max-w-xl" delayMs={120}>
+        <form
+          action={formAction}
+          method="POST"
+          className="space-y-5 rounded-2xl border border-slate-500/35 bg-slate-800/65 p-6 shadow-xl shadow-black/25 backdrop-blur-md ring-1 ring-violet-400/15 sm:p-8"
+        >
         <input type="hidden" name="_subject" value={contactForm.subject} />
         <input type="hidden" name="_captcha" value="false" />
         {nextUrl ? <input type="hidden" name="_next" value={nextUrl} /> : null}
@@ -87,7 +89,8 @@ export function Contact() {
             {contactForm.submit}
           </button>
         </p>
-      </form>
+        </form>
+      </Reveal>
     </section>
   );
 }

@@ -1,4 +1,5 @@
 import { useMessages } from "../i18n/context";
+import { Reveal } from "./Reveal";
 
 function NeuralMesh() {
   return (
@@ -46,7 +47,7 @@ export function Hero() {
         aria-hidden
       />
       <div className="relative mx-auto grid w-full max-w-6xl gap-14 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:items-center">
-        <div className="text-center lg:text-left">
+        <Reveal className="text-center lg:text-left" rootMargin="0px 0px 15% 0px" delayMs={0}>
           <p className="font-mono text-[10px] font-medium uppercase tracking-[0.32em] text-cyan-400/85">
             <span className="text-slate-500">{heroCopy.badgeLeft}</span>
             {heroCopy.badgeMid}
@@ -73,8 +74,12 @@ export function Hero() {
               {heroCopy.ctaSecondary}
             </a>
           </div>
-        </div>
-        <div className="relative mx-auto hidden h-[min(420px,55vh)] w-full max-w-md lg:block">
+        </Reveal>
+        <Reveal
+          className="relative mx-auto hidden h-[min(420px,55vh)] w-full max-w-md lg:block"
+          rootMargin="0px 0px 15% 0px"
+          delayMs={120}
+        >
           <NeuralMesh />
           <div className="absolute inset-0 rounded-3xl border border-cyan-400/20 bg-gradient-to-br from-slate-800/85 via-slate-900/90 to-violet-950/35 p-6 shadow-2xl shadow-violet-950/25 backdrop-blur-sm ring-1 ring-white/5">
             <div className="flex h-full min-h-0 flex-col justify-between gap-4">
@@ -143,7 +148,7 @@ export function Hero() {
           </div>
           <div className="absolute -right-4 -top-4 -z-10 size-40 rounded-full bg-cyan-500/25 blur-3xl" />
           <div className="absolute -bottom-6 -left-6 -z-10 size-48 rounded-full bg-violet-600/20 blur-3xl" />
-        </div>
+        </Reveal>
       </div>
     </section>
   );

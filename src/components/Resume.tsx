@@ -1,4 +1,5 @@
 import { useMessages } from "../i18n/context";
+import { Reveal } from "./Reveal";
 import { SectionIntro } from "./SectionIntro";
 
 export function Resume() {
@@ -10,7 +11,7 @@ export function Resume() {
       className="scroll-mt-20 border-t border-slate-600/25 bg-gradient-to-b from-slate-800/40 via-slate-800/28 to-slate-900/35 px-4 py-28 sm:px-6"
     >
       <div className="mx-auto grid max-w-6xl gap-14 md:grid-cols-2 md:items-center">
-        <div className="mx-auto max-w-sm text-center md:mx-0">
+        <Reveal className="mx-auto max-w-sm text-center md:mx-0" delayMs={0}>
           <div className="card-lift overflow-hidden rounded-2xl border border-slate-600/35 bg-slate-800/50 shadow-2xl shadow-black/25 backdrop-blur-sm">
             <img
               src="/images/vitor_picture.jpg"
@@ -53,8 +54,8 @@ export function Resume() {
               </div>
             </div>
           </div>
-        </div>
-        <div>
+        </Reveal>
+        <Reveal className="min-w-0" delayMs={100}>
           <SectionIntro kicker={kicker} title={title} description={resume.blurb} />
           <a
             href={site.links.resume}
@@ -65,7 +66,7 @@ export function Resume() {
             <DownloadIcon />
             {resume.downloadLabel}
           </a>
-        </div>
+        </Reveal>
       </div>
     </section>
   );
