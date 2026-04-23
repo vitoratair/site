@@ -9,7 +9,6 @@ export const messages: Messages = {
     { href: "#services", label: "Services" },
     { href: "#projects", label: "Projects" },
     { href: "#skills", label: "Skills" },
-    { href: "#experience", label: "Experience" },
     { href: "#resume", label: "Résumé" },
     { href: "#hobbies", label: "Life" },
     { href: "#contact", label: "Contact" },
@@ -71,7 +70,6 @@ export const messages: Messages = {
     services: { kicker: "Engagement", title: "Services (LLC)" },
     projects: { kicker: "Portfolio", title: "Projects & cases" },
     skills: { kicker: "Stack", title: "Core skills" },
-    experience: { kicker: "Timeline", title: "Professional path" },
     resume: { kicker: "CV", title: "Full résumé" },
     contact: { kicker: "Contact", title: "Let’s talk" },
   },
@@ -203,58 +201,6 @@ export const messages: Messages = {
     {
       title: "Git, Linux & networking",
       body: "Short-lived branches, code review, and predictable releases; Linux and networking background that helps debug integrations, containers, and hybrid environments.",
-    },
-  ],
-
-  timeline: [
-    {
-      role: "Co-founder & engineer",
-      org: "Workedin",
-      date: "December 2014",
-      paragraphs: [
-        "Startup kick-off with four peers: in under two months we had software, commercial strategy, and a registered company. My first time taking a product from zero to launch with shared ownership.",
-      ],
-      link: { href: WORKEDIN, label: "workedin.com.br" },
-    },
-    {
-      role: "Software engineer",
-      org: "Intelbras — Wireless Indoor R&D",
-      date: "Since January 2014",
-      paragraphs: [
-        "Django platform for wireless network management in an industrial setting, with strong Linux, protocols, and product requirements. Continuous learning in agile methods and aligning engineering with real customer usage.",
-      ],
-    },
-    {
-      role: "Product engineer",
-      org: "Intelbras — Wired Network R&D",
-      date: "July 2013",
-      paragraphs: [
-        "Working with marketing specs, customer conversations, and product thinking beyond code. Canvas, design thinking, and Scrum to clarify priorities and reduce rework.",
-      ],
-    },
-    {
-      role: "Product validator",
-      org: "Intelbras — INET R&D",
-      date: "November 2012",
-      paragraphs: [
-        "Rigorous software/hardware testing; deep GNU/Linux and FreeBSD work with bash/perl scripts. Strong networking foundations I still use when designing distributed systems.",
-      ],
-    },
-    {
-      role: "Intern",
-      org: "Intelbras — ICON R&D",
-      date: "November 2011",
-      paragraphs: [
-        "First serious exposure to engineering while validating a DECT platform; sparked interest in C and low-level software.",
-      ],
-    },
-    {
-      role: "Early jobs",
-      org: "",
-      date: "Feb 2009 — Oct 2011",
-      paragraphs: [
-        "Teaching assistant (Excel, Fireworks, CorelDRAW, Photoshop), computer repair, and graphic design work — visual communication and deadline discipline.",
-      ],
     },
   ],
 

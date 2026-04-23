@@ -1,6 +1,5 @@
 import { About } from "./components/About";
 import { Contact } from "./components/Contact";
-import { Experience } from "./components/Experience";
 import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
 import { Hobbies } from "./components/Hobbies";
@@ -21,7 +20,6 @@ export default function App() {
         <Services />
         <Projects />
         <Skills />
-        <Experience />
         <Resume />
         <Hobbies />
         <Contact />

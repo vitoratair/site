@@ -7,7 +7,6 @@ export const messages = {
     { href: "#services", label: "Serviços" },
     { href: "#projects", label: "Projetos" },
     { href: "#skills", label: "Skills" },
-    { href: "#experience", label: "Experiência" },
     { href: "#resume", label: "CV" },
     { href: "#hobbies", label: "Lazer" },
     { href: "#contact", label: "Contato" },
@@ -69,7 +68,6 @@ export const messages = {
     services: { kicker: "Contratação", title: "Serviços (PJ)" },
     projects: { kicker: "Portfólio", title: "Projetos & cases" },
     skills: { kicker: "Stack", title: "Principais competências" },
-    experience: { kicker: "Timeline", title: "Trajetória profissional" },
     resume: { kicker: "CV", title: "Currículo completo" },
     contact: { kicker: "Contato", title: "Vamos conversar?" },
   },
@@ -201,58 +199,6 @@ export const messages = {
     {
       title: "Git, Linux & redes",
       body: "Branches curtas, revisão de código e releases previsíveis; fundo em Linux e rede útil para depurar integrações, containers e ambientes híbridos.",
-    },
-  ],
-
-  timeline: [
-    {
-      role: "Cofundador e desenvolvedor",
-      org: "Workedin",
-      date: "Dezembro 2014",
-      paragraphs: [
-        "Arranque de startup com mais quatro colegas: em menos de dois meses tínhamos software, estratégia comercial e empresa aberta. Foi o primeiro projeto em que levei um produto do zero ao ar com responsabilidade partilhada.",
-      ],
-      link: { href: WORKEDIN, label: "workedin.com.br" },
-    },
-    {
-      role: "Desenvolvedor de software",
-      org: "Intelbras — P&D Wireless Indoor",
-      date: "Desde Janeiro 2014",
-      paragraphs: [
-        "Plataforma Django para gestão e controlo de redes wireless em contexto industrial, com forte componente Linux, protocolos e necessidades de produto. Aprendizagem contínua em metodologias ágeis e em como alinhar engenharia com o que o cliente realmente usa.",
-      ],
-    },
-    {
-      role: "Desenvolvedor de produto",
-      org: "Intelbras — P&D Wired Network",
-      date: "Julho 2013",
-      paragraphs: [
-        "Foco em especificação com marketing, contacto com clientes e visão de produto além do código. Canvas, design thinking e Scrum como ferramentas para clarificar prioridades e reduzir retrabalho.",
-      ],
-    },
-    {
-      role: "Validador de produto",
-      org: "Intelbras — P&D INET",
-      date: "Novembro 2012",
-      paragraphs: [
-        "Testes de software e hardware em cenários exigentes; aprofundamento em GNU/Linux e FreeBSD e scripts em bash/perl. Base forte em redes e protocolos que ainda uso ao desenhar sistemas distribuídos.",
-      ],
-    },
-    {
-      role: "Estagiário",
-      org: "Intelbras — P&D ICON",
-      date: "Novembro 2011",
-      paragraphs: [
-        "Primeiro contacto sério com desenvolvimento ao validar plataforma DECT; despertou o interesse por programação em C e por entender software de baixo nível.",
-      ],
-    },
-    {
-      role: "Primeiros trabalhos",
-      org: "",
-      date: "Fev. 2009 — Out. 2011",
-      paragraphs: [
-        "Auxiliar de cursos (Excel, Fireworks, CorelDRAW, Photoshop), manutenção de computadores e trabalho com design gráfico — percurso que ensinou comunicação visual e disciplina com prazos.",
-      ],
     },
   ],
 
