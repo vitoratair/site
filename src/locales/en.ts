@@ -216,12 +216,11 @@ export const messages: Messages = {
     pdfLinkLabel: "Full PDF — handy if someone asks for an attachment",
     roles: [
       {
-        title: "Senior software developer · assigned to Bosch Security Systems",
-        company: "Devoteam",
+        title: "Senior software developer",
+        company: "Bosch Security Systems",
         tenure: "About two years",
         location: "Germany",
         lines: [
-          "Employed by Devoteam (engineering outsourcing): payroll and contract were through the consultancy; day to day I was embedded full-time with the Bosch Security Systems client team in Germany on the IP camera product line.",
           "IP security camera team: shipping features and tightening performance in software that sits right on top of hardware — from the event pipeline to what the operator actually sees.",
           "Heavy use of Python for the “orchestration” side: business rules, services, automated tests, and tooling that kept the dev loop moving.",
           "C in the tight spots: drivers, sensor I/O, timeouts, and weird half-states when the bus glitches or a unit runs for months in a corridor somewhere.",

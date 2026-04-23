@@ -214,12 +214,11 @@ export const messages = {
     pdfLinkLabel: "PDF com o detalhe completo — por exemplo para anexar a uma proposta",
     roles: [
       {
-        title: "Senior software developer · alocação na Bosch Security Systems",
-        company: "Devoteam",
+        title: "Senior software developer",
+        company: "Bosch Security Systems",
         tenure: "Cerca de dois anos",
         location: "Alemanha",
         lines: [
-          "Contrato com a Devoteam (consultoria / outsourcing de engenharia): o vínculo e a fatura são pela consultora; o trabalho foi em tempo integral integrado na equipa do cliente Bosch Security Systems, na Alemanha, no produto de câmaras IP.",
           "Equipa de câmaras de segurança IP: evolução de funcionalidades e de performance em software que vive colado ao hardware — do pipeline de eventos até ao que chega ao operador.",
           "Muito Python para a parte “orquestra”: regras, serviços, testes automatizados e ferramentas que aceleravam o ciclo de desenvolvimento.",
           "C onde a conversa era mesmo apertada: drivers, comunicação com sensores, timeouts e estados inconsistentes quando o bus falha ou o dispositivo fica meses ligado num corredor qualquer.",
