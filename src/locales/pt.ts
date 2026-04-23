@@ -8,7 +8,7 @@ export const messages = {
     { href: "#projects", label: "Projetos" },
     { href: "#skills", label: "Skills" },
     { href: "#resume", label: "CV" },
-    { href: "#hobbies", label: "Lazer" },
+    { href: "#hobbies", label: "Além do ecrã" },
     { href: "#contact", label: "Contato" },
   ],
 
@@ -210,8 +210,9 @@ export const messages = {
   },
 
   hobbies: {
-    title: "Tempo livre",
-    body: "Guitarra, futebol com amigos e, sobretudo, pedalar por sítios novos — estradas e montanha para desligar do ecrã.",
+    kicker: "além do ecrã",
+    title: "Desporto e ar livre",
+    body: "Gosto de desporto e de estar no ar livre: sobretudo bicicleta (estrada e subidas pela serra), snowboard quando há neve, e outras coisas no mesmo espírito — trilhos, neve, velocidade controlada. É o contraponto que equilibra tanto tempo em frente ao ecrã.",
   },
 
   contact: {

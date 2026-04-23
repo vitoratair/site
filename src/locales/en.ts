@@ -10,7 +10,7 @@ export const messages: Messages = {
     { href: "#projects", label: "Projects" },
     { href: "#skills", label: "Skills" },
     { href: "#resume", label: "Résumé" },
-    { href: "#hobbies", label: "Life" },
+    { href: "#hobbies", label: "Beyond the screen" },
     { href: "#contact", label: "Contact" },
   ],
 
@@ -212,8 +212,9 @@ export const messages: Messages = {
   },
 
   hobbies: {
-    title: "Downtime",
-    body: "Guitar, football with friends, and above all cycling new roads and mountains to unplug from the screen.",
+    kicker: "beyond the screen",
+    title: "Sports & the outdoors",
+    body: "I’m into sports and time outside: mostly cycling (road and mountain climbs), snowboarding when there’s snow, and anything in that same lane—trails, powder, speed with control. It balances out all the screen-heavy work.",
   },
 
   contact: {
