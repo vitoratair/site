@@ -55,7 +55,13 @@ fi
 : "${LOCAWEB_FTP_USER:?Defina LOCAWEB_FTP_USER}"
 : "${LOCAWEB_FTP_PASSWORD:?Defina LOCAWEB_FTP_PASSWORD}"
 
-echo "→ lftp: enviar dist/ → ${REMOTE_DIR}/ (sem --delete; ficheiros extra no servidor mantêm-se)"
+MIRROR_EXTRA=(--exclude-glob .DS_Store --exclude-glob .git*)
+if [[ "${LOCAWEB_FTP_DELETE_UNUSED:-0}" == "1" ]]; then
+  MIRROR_EXTRA+=(--delete)
+  echo "→ lftp: enviar dist/ → ${REMOTE_DIR}/ (com --delete: apaga no servidor o que não está em dist/ — só uses se public_html for só este site)"
+else
+  echo "→ lftp: enviar dist/ → ${REMOTE_DIR}/ (sem --delete: ficheiros antigos em dist/, ex. assets com hash velho, podem ficar no servidor)"
+fi
 
 # mirror -R: envia local dist → remoto; --parallel acelera uploads pequenos
 lftp -u "${LOCAWEB_FTP_USER}","${LOCAWEB_FTP_PASSWORD}" "${LOCAWEB_FTP_HOST}" <<EOF
@@ -65,7 +71,7 @@ set net:reconnect-interval-base 5
 set ftp:passive-mode true
 cd ${REMOTE_DIR}
 lcd dist
-mirror -R --verbose --parallel=3 --exclude-glob .DS_Store --exclude-glob .git*
+mirror -R --verbose --parallel=3 ${MIRROR_EXTRA[*]}
 bye
 EOF
 
