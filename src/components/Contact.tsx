@@ -1,5 +1,5 @@
 import type { FormEvent } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useMessages } from "../i18n/context";
 import { Reveal } from "./Reveal";
 import { SectionIntro } from "./SectionIntro";
@@ -16,6 +16,12 @@ export function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
   const [showError, setShowError] = useState(false);
+
+  useEffect(() => {
+    if (!showSuccess) return;
+    const id = window.setTimeout(() => setShowSuccess(false), 5500);
+    return () => window.clearTimeout(id);
+  }, [showSuccess]);
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -94,7 +100,7 @@ export function Contact() {
 
           {showSuccess ? (
             <p
-              className="rounded-xl border border-emerald-500/35 bg-emerald-950/40 px-4 py-3 text-center text-sm text-emerald-100"
+              className="rounded-xl bg-slate-900/50 px-4 py-3 text-center text-sm text-slate-200 ring-1 ring-emerald-400/20"
               role="status"
               aria-live="polite"
             >
