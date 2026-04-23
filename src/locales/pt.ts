@@ -23,7 +23,7 @@ export const messages = {
       "Atuo como pessoa jurídica (CNPJ) no Brasil, aberto a projetos sob demanda: produto, backend e soluções com IA.",
       "Forte em Python/Django e em desenho de fluxos com LLMs, RAG e agentes com ferramentas.",
     ],
-    tags: ["Python", "Django", "FastAPI", "TypeScript", "LLM", "RAG", "Docker", "Postgres"],
+    tags: ["Python", "Django", "FastAPI", "TypeScript", "Angular", "LLM", "RAG", "Docker", "Postgres"],
     cards: [
       {
         title: "Stack",
@@ -185,8 +185,8 @@ export const messages = {
       body: "RAG e bases vectoriais, tool-calling e agentes (incl. MCP onde o ecossistema já expõe ferramentas), saídas estruturadas, avaliação e guardrails — sempre com olho em custo, latência e privacidade.",
     },
     {
-      title: "TypeScript, React & Vite",
-      body: "Interfaces e SPAs com ecossistema atual: componentes reutilizáveis, tipagem forte e build rápido; alinhamento com equipas de produto e design systems quando existem.",
+      title: "TypeScript, React, Angular & Vite",
+      body: "SPAs e dashboards com React (Vite) ou Angular: componentes reutilizáveis, rotas, tipagem forte e build moderno; integração com APIs e alinhamento com equipas de produto e design systems quando existem.",
     },
     {
       title: "Postgres, dados & mensageria",

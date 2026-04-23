@@ -25,7 +25,7 @@ export const messages: Messages = {
       "I work as a legal entity (CNPJ) in Brazil and take on scoped projects: product engineering, backends, and applied AI solutions.",
       "Strong in Python/Django and in designing LLM flows: RAG, tool-using agents, and production guardrails.",
     ],
-    tags: ["Python", "Django", "FastAPI", "TypeScript", "LLM", "RAG", "Docker", "Postgres"],
+    tags: ["Python", "Django", "FastAPI", "TypeScript", "Angular", "LLM", "RAG", "Docker", "Postgres"],
     cards: [
       {
         title: "Stack",
@@ -187,8 +187,8 @@ export const messages: Messages = {
       body: "RAG and vector stores, tool-calling and agents (including MCP where the stack already exposes tools), structured outputs, evaluation, and guardrails — always mindful of cost, latency, and privacy.",
     },
     {
-      title: "TypeScript, React & Vite",
-      body: "Interfaces and SPAs with a current toolchain: reusable components, strong typing, and fast builds; aligned with product teams and design systems when they exist.",
+      title: "TypeScript, React, Angular & Vite",
+      body: "SPAs and dashboards with React (Vite) or Angular: reusable components, routing, strong typing, and modern tooling; API integration and alignment with product teams and design systems when they exist.",
     },
     {
       title: "Postgres, data & messaging",
