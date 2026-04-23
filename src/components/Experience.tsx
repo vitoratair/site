@@ -7,25 +7,29 @@ type ExpRole = Messages["experience"]["roles"][number];
 
 function RoleTimeline({ roles, keyPrefix }: { roles: ExpRole[]; keyPrefix: string }) {
   return (
-    <ol className="space-y-8 border-l border-slate-600/50 pl-6">
+    <ol className="space-y-10">
       {roles.map((role, i) => (
-        <li key={`${keyPrefix}-${i}`} className="relative">
-          <span
-            className="absolute -left-[calc(0.25rem+1px)] top-1.5 size-2 -translate-x-[calc(50%+0.5px)] rounded-full bg-cyan-400/90 ring-4 ring-slate-900/80"
-            aria-hidden
-          />
-          <p className="text-sm text-slate-400">
-            {role.tenure}
-            <span className="text-slate-600"> · </span>
-            {role.location}
-          </p>
-          <h3 className="mt-1 font-display text-lg font-semibold text-white">{role.company}</h3>
-          <p className="mt-0.5 text-sm text-slate-500">{role.title}</p>
-          <ul className="mt-3 list-disc space-y-2 pl-4 text-sm leading-relaxed text-slate-300 marker:text-slate-600">
-            {role.lines.map((line, j) => (
-              <li key={j}>{line}</li>
-            ))}
-          </ul>
+        <li key={`${keyPrefix}-${i}`} className="border-l border-slate-600/50 pl-4 sm:pl-5">
+          <div className="grid grid-cols-[auto_1fr] gap-x-3 sm:gap-x-3.5">
+            <span
+              className="col-start-1 row-start-1 size-2 self-center rounded-full bg-cyan-400/90 ring-4 ring-slate-900/80"
+              aria-hidden
+            />
+            <p className="col-start-2 row-start-1 min-w-0 text-sm leading-snug text-slate-400 sm:leading-normal">
+              {role.tenure}
+              <span className="text-slate-600"> · </span>
+              {role.location}
+            </p>
+            <h3 className="col-start-2 row-start-2 mt-3 font-display text-lg font-semibold leading-snug text-white">
+              {role.company}
+            </h3>
+            <p className="col-start-2 row-start-3 mt-1 text-sm text-slate-500">{role.title}</p>
+            <ul className="col-start-2 row-start-4 mt-3 list-disc space-y-2 pl-4 text-sm leading-relaxed text-slate-300 marker:text-slate-600">
+              {role.lines.map((line, j) => (
+                <li key={j}>{line}</li>
+              ))}
+            </ul>
+          </div>
         </li>
       ))}
     </ol>
