@@ -34,11 +34,15 @@ if [[ "$METHOD" == "rsync" ]]; then
   : "${LOCAWEB_SSH_USER:?Defina LOCAWEB_SSH_USER}"
   REMOTE_PATH="${LOCAWEB_SSH_PATH:-~/public_html}"
   RSYNC=(rsync -avz)
-  if [[ "${LOCAWEB_RSYNC_DELETE:-0}" == "1" ]]; then
+  if [[ "${LOCAWEB_RSYNC_NO_DELETE:-0}" != "1" ]]; then
     RSYNC+=(--delete)
   fi
   RSYNC+=(dist/ "${LOCAWEB_SSH_USER}@${LOCAWEB_SSH_HOST}:${REMOTE_PATH}/")
-  echo "→ rsync dist/ → ${LOCAWEB_SSH_USER}@${LOCAWEB_SSH_HOST}:${REMOTE_PATH}/"
+  if [[ "${LOCAWEB_RSYNC_NO_DELETE:-0}" == "1" ]]; then
+    echo "→ rsync dist/ → ${LOCAWEB_SSH_USER}@${LOCAWEB_SSH_HOST}:${REMOTE_PATH}/ (sem --delete)"
+  else
+    echo "→ rsync dist/ → ${LOCAWEB_SSH_USER}@${LOCAWEB_SSH_HOST}:${REMOTE_PATH}/ (com --delete)"
+  fi
   "${RSYNC[@]}"
   echo "→ Concluído."
   exit 0
@@ -56,11 +60,13 @@ fi
 : "${LOCAWEB_FTP_PASSWORD:?Defina LOCAWEB_FTP_PASSWORD}"
 
 MIRROR_EXTRA=(--exclude-glob .DS_Store --exclude-glob .git*)
-if [[ "${LOCAWEB_FTP_DELETE_UNUSED:-0}" == "1" ]]; then
+# Por defeito --delete: o destino fica igual ao dist/ (apaga no servidor o que não está no build).
+# LOCAWEB_FTP_NO_DELETE=1 para desativar (ex.: há outros ficheiros em public_html que queres manter).
+if [[ "${LOCAWEB_FTP_NO_DELETE:-0}" != "1" ]]; then
   MIRROR_EXTRA+=(--delete)
-  echo "→ lftp: enviar dist/ → ${REMOTE_DIR}/ (com --delete: apaga no servidor o que não está em dist/ — só uses se public_html for só este site)"
+  echo "→ lftp: enviar dist/ → ${REMOTE_DIR}/ (com --delete: remove no servidor o que não existe em dist/)"
 else
-  echo "→ lftp: enviar dist/ → ${REMOTE_DIR}/ (sem --delete: ficheiros antigos em dist/, ex. assets com hash velho, podem ficar no servidor)"
+  echo "→ lftp: enviar dist/ → ${REMOTE_DIR}/ (LOCAWEB_FTP_NO_DELETE=1 — sem --delete)"
 fi
 
 # mirror -R: envia local dist → remoto; --parallel acelera uploads pequenos
