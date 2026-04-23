@@ -10,12 +10,12 @@ function RoleTimeline({ roles, keyPrefix }: { roles: ExpRole[]; keyPrefix: strin
     <ol className="space-y-10">
       {roles.map((role, i) => (
         <li key={`${keyPrefix}-${i}`} className="border-l border-slate-600/50 pl-4 sm:pl-5">
-          <div className="grid grid-cols-[auto_1fr] gap-x-3 sm:gap-x-3.5">
+          <div className="grid grid-cols-[auto_1fr] items-start gap-x-3 sm:gap-x-3.5">
             <span
-              className="col-start-1 row-start-1 size-2 self-center rounded-full bg-cyan-400/90 ring-4 ring-slate-900/80"
+              className="col-start-1 row-start-1 mt-[0.35rem] size-2 shrink-0 rounded-full bg-cyan-400/90 ring-4 ring-slate-900/80 sm:mt-[0.4rem]"
               aria-hidden
             />
-            <p className="col-start-2 row-start-1 min-w-0 text-sm leading-snug text-slate-400 sm:leading-normal">
+            <p className="col-start-2 row-start-1 min-w-0 text-pretty text-sm leading-snug text-slate-400 sm:leading-normal">
               {role.tenure}
               <span className="text-slate-600"> · </span>
               {role.location}
