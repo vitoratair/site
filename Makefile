@@ -14,7 +14,6 @@ help:
 	@echo "Credenciais: ficheiro .env.locaweb (ver .env.locaweb.example)"
 	@echo "FTP: precisa de lftp (macOS: brew install lftp)"
 	@echo "SSH: LOCAWEB_PUBLISH_METHOD=rsync no .env.locaweb"
-	@echo "CI: push para GitHub com workflow deploy-locaweb-ftp.yml + secrets HOST, USER, PASS"
 
 install:
 	npm ci
