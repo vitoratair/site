@@ -33,7 +33,7 @@ function NeuralMesh() {
 }
 
 export function Hero() {
-  const { heroCopy, heroGraphPanel, site } = useMessages();
+  const { heroCopy, heroGraphPanel } = useMessages();
 
   return (
     <section
@@ -59,7 +59,7 @@ export function Hero() {
               {heroCopy.name}
             </span>
           </h1>
-          <p className="mx-auto mt-6 max-w-lg text-lg text-slate-300 lg:mx-0">{site.tagline}</p>
+          <p className="mx-auto mt-6 max-w-lg text-lg text-slate-300 lg:mx-0">{heroCopy.lead}</p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
             <a
               href="#contact"
@@ -95,8 +95,8 @@ export function Hero() {
                 <p className="mt-2 font-display text-sm font-semibold leading-snug text-white">
                   {heroGraphPanel.snapshotTitle}
                 </p>
-                {heroGraphPanel.snapshotLines.map((line) => (
-                  <p key={line} className="mt-2 text-[11px] leading-relaxed text-slate-400">
+                {heroGraphPanel.snapshotLines.map((line, i) => (
+                  <p key={i} className="mt-2 text-[11px] leading-relaxed text-slate-400">
                     {line}
                   </p>
                 ))}

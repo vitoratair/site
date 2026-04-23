@@ -20,8 +20,8 @@ export const messages: Messages = {
     snapshotKicker: "snapshot",
     snapshotTitle: "Engineering · web & AI",
     snapshotLines: [
-      "I bill as a legal entity in Brazil (CNPJ). I work remotely with clients in Brazil or anywhere in the world, whenever your organization can contract a Brazil-based service provider.",
-      "Strong in Python/Django and in designing LLM flows: RAG, tool-using agents, and production guardrails.",
+      "Technical snapshot: Postgres, queues, Docker, CI; on the model side, sensible chunking for RAG, tool-calling with guardrails, tracing, and an eye on cost and latency.",
+      "TypeScript front ends (React or Angular) when the product needs a dashboard or guided flow; clear API contracts between services.",
     ],
     tags: ["Python", "Django", "FastAPI", "TypeScript", "Angular", "LLM", "RAG", "Docker", "Postgres"],
     cards: [
@@ -40,10 +40,12 @@ export const messages: Messages = {
     name: "Vitor Atair",
     siteDomain: "vitoratair.com",
     tagline:
-      "Software engineer · Brazil-based LLC · remote work for Brazil & international clients (contracting via a Brazil-based provider) · web, APIs, and applied AI",
+      "Web, APIs & applied AI · Brazil-registered LLC · remote with teams across time zones",
     email: "vitor.ruts@gmail.com",
+    phoneTel: "+351934843199",
+    phoneDisplay: "+351 934 843 199",
     links: {
-      linkedin: "https://www.linkedin.com/pub/vitor-atair/49/606/572",
+      linkedin: "https://www.linkedin.com/in/vitor-atair-57260649",
       instagram: "https://www.instagram.com/vitor_atair/",
       workedin: WORKEDIN,
     },
@@ -55,6 +57,8 @@ export const messages: Messages = {
     badgeRight: "]",
     titleBefore: "Hi, I'm",
     name: "Vitor",
+    lead:
+      "I like shipping things that stay up: reliable services, Django or FastAPI on the backend, and—when it fits—LLM-backed products and agents. I contract as an LLC in Brazil; day to day is remote with teams in different time zones, whenever your side can pay a Brazil-based service provider.",
     ctaPrimary: "Discuss a project",
     ctaSecondary: "View services",
   },
@@ -76,7 +80,7 @@ export const messages: Messages = {
 
   about: {
     intro:
-      "I’ve been building software since 2012. Today I operate as an LLC (CNPJ) in Brazil and can own end-to-end delivery or embed with your team — remotely, with clients in Brazil or internationally, whenever the commercial relationship can be with a Brazil-based service provider. Growing focus on applied AI: agents, LLM integrations, and products that need to scale safely.",
+      "I’ve been building software since 2012. What I care about now is working with people who can decide clearly: scope you can measure, direct communication (Slack, Meet, whatever you already use), and code your team can maintain after I’m gone. I can own a slice end to end or match your release cadence. If you already live in Django, APIs, or you’re piloting internal copilots, onboarding is quick; if not, we can walk the path without buzzwords.",
     columns: [
       {
         title: "What I do",
@@ -151,9 +155,9 @@ export const messages: Messages = {
       link: { href: WORKEDIN, label: "workedin.com.br" },
     },
     {
-      title: "Enterprise Django platforms",
+      title: "Internal Django platforms",
       description:
-        "Years building and evolving web and management systems in industrial R&D, integrating networks, Linux, and demanding product constraints.",
+        "A long thread of ERP-style tools and web apps for operations and finance—especially in hospitality, with integrations into external systems. Alongside that, networking and Linux background when the product talks to hardware or lab benches.",
       tags: ["Django", "APIs", "Linux"],
     },
     {
@@ -171,7 +175,7 @@ export const messages: Messages = {
   ],
 
   skillsIntro:
-    "Stack I ship in production and with clients — from APIs and data to modern front ends and AI-backed services.",
+    "If you think business first: this means systems that don’t fall over on weekends, integrations that don’t depend on a single hero engineer, and—when it fits—internal assistants your team actually trusts. Technically, it’s the stack below—what I run in production with clients.",
 
   skills: [
     {
@@ -244,6 +248,7 @@ export const messages: Messages = {
         lines: [
           "Contact centre work that stopped relying on lost days in spreadsheets — click to dial, reports when you need them.",
           "A CRM where sales and marketing could finally read from the same script — one place for the data, fewer manual copies.",
+          "Small consultancy-style environment: tight deadlines, frequent demos for stakeholders, and code that had to survive impatient users when anything felt slow.",
         ],
       },
       {
@@ -255,6 +260,7 @@ export const messages: Messages = {
           "Firmware for managed switches and routers — tight specs, lab time, low-level C.",
           "A Python and Django system (with a web UI) to manage access points on the network.",
           "Helping figure out whether a new product idea had legs technically and commercially before it got a part number.",
+          "Plenty of time next to hardware engineers—when the bug sits on the software/board boundary, someone has to show up with logs or a scope.",
         ],
       },
     ],
@@ -270,6 +276,8 @@ export const messages: Messages = {
     title: "Let’s talk?",
     intro:
       "Send a few lines of context (product, stack, timeline, and whether you already have an LLC-friendly contract template). I usually reply within one to two business days.",
+    phoneIntro: "If it’s urgent or you’d rather talk, call or WhatsApp:",
+    phoneZone: "Porto · European time",
   },
 
   contactForm: {

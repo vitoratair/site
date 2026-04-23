@@ -86,6 +86,27 @@ export function Contact() {
           description={contact.intro}
           align="center"
         />
+        {site.phoneTel ? (
+          <p className="mx-auto mt-8 max-w-lg text-center text-sm leading-relaxed text-slate-400">
+            {contact.phoneIntro}{" "}
+            <a
+              href={`tel:${site.phoneTel}`}
+              className="font-medium text-cyan-300/90 underline decoration-cyan-500/30 underline-offset-2 hover:text-cyan-200"
+            >
+              {site.phoneDisplay}
+            </a>
+            {" · "}
+            <a
+              href={`https://wa.me/${site.phoneTel.replace(/\D/g, "")}`}
+              target="_blank"
+              rel="noreferrer"
+              className="font-medium text-cyan-300/90 underline decoration-cyan-500/30 underline-offset-2 hover:text-cyan-200"
+            >
+              WhatsApp
+            </a>
+            <span className="mt-2 block text-slate-500">{contact.phoneZone}</span>
+          </p>
+        ) : null}
       </div>
       <Reveal className="relative mx-auto mt-14 max-w-xl" delayMs={120}>
         <form

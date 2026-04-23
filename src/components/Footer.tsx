@@ -6,6 +6,24 @@ export function Footer() {
   return (
     <footer className="border-t border-slate-600/30 bg-gradient-to-b from-slate-900/95 to-slate-800/90 px-4 py-12 text-center sm:px-6">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-6">
+        <div className="flex flex-col items-center gap-3 text-sm text-slate-400">
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+            <a
+              href={`mailto:${site.email}`}
+              className="hover:text-cyan-300/90 hover:underline hover:underline-offset-2"
+            >
+              {site.email}
+            </a>
+            {site.phoneTel ? (
+              <a
+                href={`tel:${site.phoneTel}`}
+                className="hover:text-cyan-300/90 hover:underline hover:underline-offset-2"
+              >
+                {site.phoneDisplay}
+              </a>
+            ) : null}
+          </div>
+        </div>
         <div className="flex gap-4">
           <a
             href={site.links.instagram}

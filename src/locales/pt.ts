@@ -18,8 +18,8 @@ export const messages = {
     snapshotKicker: "snapshot",
     snapshotTitle: "Engenharia · web & IA",
     snapshotLines: [
-      "Atuo como pessoa jurídica (CNPJ) no Brasil. Projetos remotos no país ou em qualquer parte do mundo, desde que a tua organização consiga formalizar a contratação de um prestador de serviços no Brasil (PJ).",
-      "Forte em Python/Django e em desenho de fluxos com LLMs, RAG e agentes com ferramentas.",
+      "Prova técnica resumida: Postgres, filas, Docker, CI; no lado de modelo, RAG bem chunkado, tool-calling com políticas, tracing e olho em custo e latência.",
+      "Interfaces em TypeScript (React ou Angular) quando o produto pede dashboard ou fluxo guiado; contratos de API claros entre serviços.",
     ],
     tags: ["Python", "Django", "FastAPI", "TypeScript", "Angular", "LLM", "RAG", "Docker", "Postgres"],
     cards: [
@@ -38,10 +38,12 @@ export const messages = {
     name: "Vitor Atair",
     siteDomain: "vitoratair.com",
     tagline:
-      "Desenvolvedor de software · PJ no Brasil · projetos remotos no Brasil e no exterior (contrato com prestador no Brasil) · web, APIs e IA aplicada",
+      "Software web, APIs e IA aplicada · PJ no Brasil · remoto com equipas na Europa e noutros fusos",
     email: "vitor.ruts@gmail.com",
+    phoneTel: "+351934843199",
+    phoneDisplay: "+351 934 843 199",
     links: {
-      linkedin: "https://www.linkedin.com/pub/vitor-atair/49/606/572",
+      linkedin: "https://www.linkedin.com/in/vitor-atair-57260649",
       instagram: "https://www.instagram.com/vitor_atair/",
       workedin: WORKEDIN,
     },
@@ -53,6 +55,8 @@ export const messages = {
     badgeRight: "]",
     titleBefore: "Olá, sou o",
     name: "Vitor",
+    lead:
+      "Curto levar coisa até produção: serviços estáveis, Django ou FastAPI no backend, e cada vez mais produto com LLMs e agentes quando faz sentido. Contrato como PJ no Brasil; o dia a dia é remoto com equipas em fusos diferentes, sempre que o teu lado conseguir formalizar pagamento a um prestador no Brasil.",
     ctaPrimary: "Falar de um projeto",
     ctaSecondary: "Ver serviços",
   },
@@ -74,7 +78,7 @@ export const messages = {
 
   about: {
     intro:
-      "Sou desenvolvedor de software desde 2012. Hoje trabalho como PJ no Brasil e posso assumir projetos de desenvolvimento ponta a ponta ou em parceria com o teu time — em remoto, com clientes no Brasil ou no exterior, sempre que a relação comercial puder ser com um prestador de serviços no Brasil. Foco crescente em IA aplicada: agentes, integrações com LLM e produtos que precisam escalar com segurança.",
+      "Programo desde 2012. O que me interessa hoje é trabalhar com quem decide com clareza: escopo que se consegue medir, conversa direta (Slack, Meet, o que já usarem), e código que a tua equipa consegue manter depois da minha saída. Posso liderar uma fatia ponta a ponta ou encaixar-me no vosso ritmo de releases. Se já vivem em Django, APIs ou estão a experimentar copilotos internos, o arranque é rápido; se não, explico o caminho sem pressa nem buzzwords.",
     columns: [
       {
         title: "O que faço",
@@ -149,9 +153,9 @@ export const messages = {
       link: { href: WORKEDIN, label: "workedin.com.br" },
     },
     {
-      title: "Plataformas corporativas (Django)",
+      title: "Plataformas internas (Django)",
       description:
-        "Anos a construir e evoluir sistemas web e de gestão em ambiente de I&D industrial, com integração a redes, Linux e requisitos de produto exigentes.",
+        "Linha de trabalho longa em ERPs e ferramentas web para operações e finanças — sobretudo no mundo da hospitalidade e integrações com sistemas de fora. Em paralelo, background em rede e Linux útil quando o produto conversa com hardware ou laboratório.",
       tags: ["Django", "APIs", "Linux"],
     },
     {
@@ -169,7 +173,7 @@ export const messages = {
   ],
 
   skillsIntro:
-    "Stack que uso em produção e com clientes — de APIs e dados a interfaces modernas e serviços com IA.",
+    "Se o teu problema é negócio primeiro: isto traduz-se em sistemas que não caem ao fim de semana, integrações que não dependem de um herói único, e, quando faz sentido, assistentes internos que a equipa confia. Tecnicamente, é a stack abaixo — o que uso em produção e com clientes.",
 
   skills: [
     {
@@ -242,6 +246,7 @@ export const messages = {
         lines: [
           "Contact center que deixou de depender de dias perdidos em folhas: clicar e discar, relatórios na hora.",
           "Um CRM onde marketing e vendas viam finalmente o mesmo filme — dados no mesmo sítio, menos cópias manuais.",
+          "Ambiente de consultoria compacta: prazos curtos, demonstrações frequentes para stakeholders, e código que tinha de aguentar utilizadores pouco pacientes com lentidão.",
         ],
       },
       {
@@ -253,6 +258,7 @@ export const messages = {
           "Firmware para switches e routers geridos — especificações apertadas, laboratório, e C em baixo nível.",
           "Um sistema em Python e Django (com interface web) para gerir access points na rede.",
           "Também ajudar a perceber se um produto novo tinha pernas técnicas e comerciais antes de ganhar número de peça.",
+          "Contacto constante com engenharia de hardware: quando o bug é na fronteira entre software e placa, alguém tem de ir lá com o osciloscópio ou com logs muito chatos.",
         ],
       },
     ],
@@ -268,6 +274,8 @@ export const messages = {
     title: "Vamos conversar?",
     intro:
       "Conta-me em poucas linhas o contexto (produto, stack, prazo e se já tens modelo de contrato PJ). Resposta típica em até um ou dois dias úteis.",
+    phoneIntro: "Se for urgente ou preferires voz, liga ou envia WhatsApp:",
+    phoneZone: "Porto · fuso europeu",
   },
 
   contactForm: {

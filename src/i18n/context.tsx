@@ -37,7 +37,7 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
   const [locale, setLocaleState] = useState<Locale>(() => readStoredLocale() ?? detectLocale());
 
   useEffect(() => {
-    document.documentElement.lang = locale === "pt" ? "pt-BR" : "en";
+    document.documentElement.lang = locale === "pt" ? "pt-PT" : "en";
   }, [locale]);
 
   const setLocale = (next: Locale) => {
