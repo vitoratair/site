@@ -9,7 +9,7 @@ export const messages: Messages = {
     { href: "#services", label: "Services" },
     { href: "#projects", label: "Projects" },
     { href: "#skills", label: "Skills" },
-    { href: "#resume", label: "Résumé" },
+    { href: "#experience", label: "Experience" },
     { href: "#hobbies", label: "Beyond the screen" },
     { href: "#contact", label: "Contact" },
   ],
@@ -45,8 +45,6 @@ export const messages: Messages = {
     links: {
       linkedin: "https://www.linkedin.com/pub/vitor-atair/49/606/572",
       instagram: "https://www.instagram.com/vitor_atair/",
-      resume:
-        "https://drive.google.com/file/d/0B64fnH-n5_qpTF8zOEVfQTQ5Z3M/view?usp=sharing",
       workedin: WORKEDIN,
     },
   },
@@ -72,7 +70,7 @@ export const messages: Messages = {
     services: { kicker: "Engagement", title: "Services (LLC)" },
     projects: { kicker: "Portfolio", title: "Projects & cases" },
     skills: { kicker: "Stack", title: "Core skills" },
-    resume: { kicker: "CV", title: "Full résumé" },
+    experience: { kicker: "Experience", title: "Where I’ve worked" },
     contact: { kicker: "Contact", title: "Let’s talk" },
   },
 
@@ -206,11 +204,56 @@ export const messages: Messages = {
     },
   ],
 
-  resume: {
+  experience: {
     fullName: "Vitor Atair da Silva",
     blurb:
-      "Full résumé with education and detailed experience. If a project or LLC engagement makes sense, reach out on LinkedIn or via the form below.",
-    downloadLabel: "Download CV",
+      "Roughly 13 years shipping software professionally (since 2012). Path spans managed networking firmware at Intelbras, hospitality web products and integrations with Nonius in Portugal, CRM and contact-center work in Ireland, and most recently IP security cameras at Bosch (Python and C). Below is the public-facing summary — no confidential client detail; for LLC proposals or procurement there is also a PDF.",
+    pdfHref: "/CV_VITOR_ATAIR.pdf",
+    pdfLinkLabel: "Download résumé PDF (attachment / procurement)",
+    roles: [
+      {
+        title: "Senior Software Developer",
+        company: "Bosch Security Systems",
+        period: "Aug 2022 — Jan 2025",
+        location: "Germany",
+        lines: [
+          "Python and C development for IP security camera features and overall system performance.",
+          "State models, asynchronous event handling, and drivers for sensor communication.",
+        ],
+      },
+      {
+        title: "Senior Software Developer",
+        company: "Nonius Software",
+        period: "Nov 2017 — Aug 2022",
+        location: "Porto, Portugal",
+        lines: [
+          "EISA (DRF): integration tooling across multiple ERPs into a local ERP for consolidated data — architecture and new resource integrations.",
+          "Nonius Expenses (DRF / Angular): web platform for employee expenses and benefits — architecture, build, and maintenance.",
+          "Order management (Django): internal ERP for orders, invoices, payments, and projects — Django backend and frontend plus SQL against external ERPs.",
+        ],
+      },
+      {
+        title: "Senior software developer",
+        company: "Dealer Marketing",
+        period: "Nov 2015 — Nov 2017",
+        location: "Dublin, Ireland",
+        lines: [
+          "Highly interactive contact-center solution (click-to-dial, reporting).",
+          "CRM focused on UX and data analysis for sales and marketing teams.",
+        ],
+      },
+      {
+        title: "Software developer",
+        company: "Intelbras",
+        period: "Nov 2012 — Nov 2014",
+        location: "Santa Catarina, Brazil",
+        lines: [
+          "Firmware for managed switches and routers.",
+          "Python + Django + web management system to control access points on the network.",
+          "Technical and commercial feasibility analysis for new products.",
+        ],
+      },
+    ],
   },
 
   hobbies: {

@@ -7,7 +7,7 @@ export const messages = {
     { href: "#services", label: "Serviços" },
     { href: "#projects", label: "Projetos" },
     { href: "#skills", label: "Skills" },
-    { href: "#resume", label: "CV" },
+    { href: "#experience", label: "Experiência" },
     { href: "#hobbies", label: "Além do ecrã" },
     { href: "#contact", label: "Contato" },
   ],
@@ -43,8 +43,6 @@ export const messages = {
     links: {
       linkedin: "https://www.linkedin.com/pub/vitor-atair/49/606/572",
       instagram: "https://www.instagram.com/vitor_atair/",
-      resume:
-        "https://drive.google.com/file/d/0B64fnH-n5_qpTF8zOEVfQTQ5Z3M/view?usp=sharing",
       workedin: WORKEDIN,
     },
   },
@@ -70,7 +68,7 @@ export const messages = {
     services: { kicker: "Contratação", title: "Serviços (PJ)" },
     projects: { kicker: "Portfólio", title: "Projetos & cases" },
     skills: { kicker: "Stack", title: "Principais competências" },
-    resume: { kicker: "CV", title: "Currículo completo" },
+    experience: { kicker: "Experiência", title: "Onde trabalhei" },
     contact: { kicker: "Contato", title: "Vamos conversar?" },
   },
 
@@ -204,11 +202,56 @@ export const messages = {
     },
   ],
 
-  resume: {
+  experience: {
     fullName: "Vitor Atair da Silva",
     blurb:
-      "Currículo completo com formação e experiência detalhadas. Se fizer sentido para um projeto ou parceria PJ, fala comigo no LinkedIn ou pelo formulário abaixo.",
-    downloadLabel: "Baixar CV",
+      "Cerca de 13 anos a desenvolver software profissionalmente (desde 2012). Trajetória entre firmware e rede na Intelbras, produtos web e integrações na hospitalidade com a Nonius em Portugal, CRM e contact center na Irlanda, e mais recentemente câmaras de segurança na Bosch (Python e C). Abaixo fica o resumo público — sem detalhes de clientes sob NDA; para propostas PJ ou procurement, há também um PDF.",
+    pdfHref: "/CV_VITOR_ATAIR.pdf",
+    pdfLinkLabel: "Descarregar CV em PDF (anexo / procurement)",
+    roles: [
+      {
+        title: "Senior Software Developer",
+        company: "Bosch Security Systems",
+        period: "ago 2022 — jan 2025",
+        location: "Alemanha",
+        lines: [
+          "Desenvolvimento em Python e C para funcionalidades de câmaras de segurança IP e desempenho do sistema.",
+          "Modelos de estado, tratamento assíncrono de eventos e drivers para comunicação com sensores.",
+        ],
+      },
+      {
+        title: "Senior Software Developer",
+        company: "Nonius Software",
+        period: "nov 2017 — ago 2022",
+        location: "Porto, Portugal",
+        lines: [
+          "EISA (DRF): ferramenta de integração entre vários ERPs e consolidação de dados — desenho de arquitetura e integração de novos recursos.",
+          "Nonius Expenses (DRF / Angular): plataforma web de despesas e benefícios para colaboradores — arquitetura, desenvolvimento e manutenção.",
+          "Gestão de encomendas (Django): ERP interno para encomendas, faturação, pagamentos e projetos — backend, frontend e SQL contra ERPs externos.",
+        ],
+      },
+      {
+        title: "Senior software developer",
+        company: "Dealer Marketing",
+        period: "nov 2015 — nov 2017",
+        location: "Dublin, Irlanda",
+        lines: [
+          "Solução de contact center altamente interativa (click-to-dial, relatórios).",
+          "CRM com foco em UX e análise de dados para equipas comerciais.",
+        ],
+      },
+      {
+        title: "Software developer",
+        company: "Intelbras",
+        period: "nov 2012 — nov 2014",
+        location: "Santa Catarina, Brasil",
+        lines: [
+          "Firmware para switches e routers geridos.",
+          "Sistema de gestão em Python, Django e web para controlar pontos de acesso na rede.",
+          "Análise de viabilidade técnica e comercial para novos produtos.",
+        ],
+      },
+    ],
   },
 
   hobbies: {

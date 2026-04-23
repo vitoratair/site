@@ -2,15 +2,16 @@ import { useMessages } from "../i18n/context";
 import { Reveal } from "./Reveal";
 import { SectionIntro } from "./SectionIntro";
 
-export function Resume() {
-  const { resume, sectionMeta, site } = useMessages();
-  const { kicker, title } = sectionMeta.resume;
+export function Experience() {
+  const { experience, sectionMeta, site } = useMessages();
+  const { kicker, title } = sectionMeta.experience;
+
   return (
     <section
-      id="resume"
+      id="experience"
       className="scroll-mt-20 border-t border-slate-600/25 bg-gradient-to-b from-slate-800/40 via-slate-800/28 to-slate-900/35 px-4 py-28 sm:px-6"
     >
-      <div className="mx-auto grid max-w-6xl gap-14 md:grid-cols-2 md:items-center">
+      <div className="mx-auto grid max-w-6xl gap-14 md:grid-cols-2 md:items-start">
         <Reveal className="mx-auto max-w-sm text-center md:mx-0" delayMs={0}>
           <div className="card-lift overflow-hidden rounded-2xl border border-slate-600/35 bg-slate-800/50 shadow-2xl shadow-black/25 backdrop-blur-sm">
             <img
@@ -21,7 +22,7 @@ export function Resume() {
               className="aspect-[4/5] w-full object-cover"
             />
             <div className="border-t border-slate-600/30 bg-slate-800/40 p-6">
-              <p className="font-display text-xl font-semibold text-white">{resume.fullName}</p>
+              <p className="font-display text-xl font-semibold text-white">{experience.fullName}</p>
               <p className="mt-1 line-clamp-3 bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-xs font-medium leading-snug text-transparent sm:text-sm">
                 {site.tagline}
               </p>
@@ -56,16 +57,37 @@ export function Resume() {
           </div>
         </Reveal>
         <Reveal className="min-w-0" delayMs={100}>
-          <SectionIntro kicker={kicker} title={title} description={resume.blurb} />
-          <a
-            href={site.links.resume}
-            target="_blank"
-            rel="noreferrer"
-            className="btn-ai-primary mt-10 inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-white"
-          >
-            <DownloadIcon />
-            {resume.downloadLabel}
-          </a>
+          <SectionIntro kicker={kicker} title={title} description={experience.blurb} />
+          <ol className="mt-10 space-y-8 border-l border-slate-600/50 pl-6">
+            {experience.roles.map((role, i) => (
+              <li key={i} className="relative">
+                <span
+                  className="absolute -left-[calc(0.25rem+1px)] top-1.5 size-2 -translate-x-[calc(50%+0.5px)] rounded-full bg-cyan-400/90 ring-4 ring-slate-900/80"
+                  aria-hidden
+                />
+                <p className="text-xs font-semibold uppercase tracking-wide text-cyan-400/90">{role.period}</p>
+                <h3 className="mt-1 font-display text-lg font-semibold text-white">
+                  {role.title}
+                  <span className="font-normal text-slate-400"> · {role.company}</span>
+                </h3>
+                <p className="mt-0.5 text-sm text-slate-500">{role.location}</p>
+                <ul className="mt-3 list-disc space-y-1.5 pl-4 text-sm leading-relaxed text-slate-300 marker:text-slate-600">
+                  {role.lines.map((line, j) => (
+                    <li key={j}>{line}</li>
+                  ))}
+                </ul>
+              </li>
+            ))}
+          </ol>
+          <p className="mt-10">
+            <a
+              href={experience.pdfHref}
+              download
+              className="text-sm text-slate-400 underline decoration-slate-600 underline-offset-4 transition hover:text-cyan-300 hover:decoration-cyan-500/50"
+            >
+              {experience.pdfLinkLabel}
+            </a>
+          </p>
         </Reveal>
       </div>
     </section>
@@ -93,14 +115,6 @@ function LinkedInIcon() {
   return (
     <svg className="size-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
       <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-    </svg>
-  );
-}
-
-function DownloadIcon() {
-  return (
-    <svg className="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
-      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
     </svg>
   );
 }
