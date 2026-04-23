@@ -9,7 +9,7 @@ type RevealProps = {
   rootMargin?: string;
 };
 
-export function Reveal({ children, className = "", delayMs = 0, rootMargin = "0px 0px -8% 0px" }: RevealProps) {
+export function Reveal({ children, className = "", delayMs = 0, rootMargin = "0px 0px 0px 0px" }: RevealProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
 
@@ -24,7 +24,7 @@ export function Reveal({ children, className = "", delayMs = 0, rootMargin = "0p
           obs.disconnect();
         }
       },
-      { root: null, rootMargin, threshold: 0.06 },
+      { root: null, rootMargin, threshold: 0.01 },
     );
 
     obs.observe(el);

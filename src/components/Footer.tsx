@@ -1,12 +1,11 @@
 import { useMessages } from "../i18n/context";
-import { Reveal } from "./Reveal";
 
 export function Footer() {
   const { site } = useMessages();
 
   return (
     <footer className="border-t border-slate-600/30 bg-gradient-to-b from-slate-900/95 to-slate-800/90 px-4 py-12 text-center sm:px-6">
-      <Reveal className="mx-auto flex max-w-6xl flex-col items-center gap-6">
+      <div className="mx-auto flex max-w-6xl flex-col items-center gap-6">
         <div className="flex gap-4">
           <a
             href={site.links.facebook}
@@ -37,7 +36,7 @@ export function Footer() {
           </a>{" "}
           — <span className="text-slate-400">{site.name}</span>
         </p>
-      </Reveal>
+      </div>
     </footer>
   );
 }
