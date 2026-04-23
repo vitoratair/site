@@ -65,13 +65,14 @@ export function Experience() {
                   className="absolute -left-[calc(0.25rem+1px)] top-1.5 size-2 -translate-x-[calc(50%+0.5px)] rounded-full bg-cyan-400/90 ring-4 ring-slate-900/80"
                   aria-hidden
                 />
-                <p className="text-xs font-semibold uppercase tracking-wide text-cyan-400/90">{role.period}</p>
-                <h3 className="mt-1 font-display text-lg font-semibold text-white">
-                  {role.title}
-                  <span className="font-normal text-slate-400"> · {role.company}</span>
-                </h3>
-                <p className="mt-0.5 text-sm text-slate-500">{role.location}</p>
-                <ul className="mt-3 list-disc space-y-1.5 pl-4 text-sm leading-relaxed text-slate-300 marker:text-slate-600">
+                <p className="text-sm text-slate-400">
+                  {role.tenure}
+                  <span className="text-slate-600"> · </span>
+                  {role.location}
+                </p>
+                <h3 className="mt-1 font-display text-lg font-semibold text-white">{role.company}</h3>
+                <p className="mt-0.5 text-sm text-slate-500">{role.title}</p>
+                <ul className="mt-3 list-disc space-y-2 pl-4 text-sm leading-relaxed text-slate-300 marker:text-slate-600">
                   {role.lines.map((line, j) => (
                     <li key={j}>{line}</li>
                   ))}
