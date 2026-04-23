@@ -59,7 +59,9 @@ fi
 : "${LOCAWEB_FTP_USER:?Defina LOCAWEB_FTP_USER}"
 : "${LOCAWEB_FTP_PASSWORD:?Defina LOCAWEB_FTP_PASSWORD}"
 
-MIRROR_EXTRA=(--exclude-glob .DS_Store --exclude-glob .git*)
+# Só exclui .DS_Store — não uses .git* aqui: com --delete o lftp pode tentar aceder a
+# ficheiros como dist/.gitignore que não existem no build e falha.
+MIRROR_EXTRA=(--exclude-glob .DS_Store)
 # Por defeito --delete: o destino fica igual ao dist/ (apaga no servidor o que não está no build).
 # LOCAWEB_FTP_NO_DELETE=1 para desativar (ex.: há outros ficheiros em public_html que queres manter).
 if [[ "${LOCAWEB_FTP_NO_DELETE:-0}" != "1" ]]; then
