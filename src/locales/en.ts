@@ -44,7 +44,7 @@ export const messages: Messages = {
     email: "vitor.ruts@gmail.com",
     links: {
       linkedin: "https://www.linkedin.com/pub/vitor-atair/49/606/572",
-      facebook: "https://www.facebook.com/vitor.atair",
+      instagram: "https://www.instagram.com/vitor_atair/",
       resume:
         "https://drive.google.com/file/d/0B64fnH-n5_qpTF8zOEVfQTQ5Z3M/view?usp=sharing",
       workedin: WORKEDIN,
