@@ -234,5 +234,8 @@ export const messages: Messages = {
     emailPlaceholder: "Your email",
     messagePlaceholder: "Project summary, stack, timeline…",
     submit: "Send message",
+    submitting: "Sending…",
+    success: "Message sent successfully. Thanks — I’ll get back to you soon.",
+    error: "Could not send right now. Please try again in a moment or email me directly using the address in the footer.",
   },
 };

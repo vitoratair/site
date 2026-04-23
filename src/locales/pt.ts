@@ -232,6 +232,9 @@ export const messages = {
     emailPlaceholder: "O teu e-mail",
     messagePlaceholder: "Resumo do projeto, stack, prazo…",
     submit: "Enviar mensagem",
+    submitting: "A enviar…",
+    success: "Mensagem enviada com sucesso. Obrigado — responderei em breve.",
+    error: "Não foi possível enviar. Tenta de novo daqui a pouco ou escreve diretamente para o e-mail no rodapé.",
   },
 };
 
