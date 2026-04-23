@@ -27,7 +27,14 @@ export function Footer() {
           </a>
         </div>
         <p className="text-sm text-slate-500">
-          © vitoratair.com.br — <span className="text-slate-400">{site.name}</span>
+          ©{" "}
+          <a
+            href={`https://${site.siteDomain}`}
+            className="text-slate-500 underline-offset-2 hover:text-slate-400 hover:underline"
+          >
+            {site.siteDomain}
+          </a>{" "}
+          — <span className="text-slate-400">{site.name}</span>
         </p>
       </div>
     </footer>

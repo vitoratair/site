@@ -36,6 +36,7 @@ export const messages = {
 
   site: {
     name: "Vitor Atair",
+    siteDomain: "vitoratair.com",
     tagline:
       "Desenvolvedor de software · PJ no Brasil · projetos remotos no Brasil e no exterior (contrato com prestador no Brasil) · web, APIs e IA aplicada",
     email: "vitor.ruts@gmail.com",

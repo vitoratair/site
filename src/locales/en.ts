@@ -38,6 +38,7 @@ export const messages: Messages = {
 
   site: {
     name: "Vitor Atair",
+    siteDomain: "vitoratair.com",
     tagline:
       "Software engineer · Brazil-based LLC · remote work for Brazil & international clients (contracting via a Brazil-based provider) · web, APIs, and applied AI",
     email: "vitor.ruts@gmail.com",
