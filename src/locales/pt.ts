@@ -1,4 +1,4 @@
-const WORKEDIN = "http://www.workedin.com.br";
+const WORKEDIN = "https://www.workedin.com.br";
 
 export const messages = {
   navLinks: [
@@ -6,7 +6,7 @@ export const messages = {
     { href: "#about", label: "Sobre" },
     { href: "#services", label: "Serviços" },
     { href: "#projects", label: "Projetos" },
-    { href: "#skills", label: "Skills" },
+    { href: "#skills", label: "Competências" },
     { href: "#experience", label: "Experiência" },
     { href: "#hobbies", label: "Além do ecrã" },
     { href: "#contact", label: "Contato" },
@@ -61,7 +61,7 @@ export const messages = {
     "Prestação de serviços por PJ no Brasil, com entrega remota para clientes no país ou no exterior quando a contratação de um prestador no Brasil for viável: projetos com escopo fechado, retainers ou fases de descoberta técnica. Também atendo micro e pequenas empresas com consultoria de automação — sentar contigo, perceber o processo no detalhe e desenhar o que dá para automatizar com retorno claro. Abaixo, os formatos em que mais costumo ajudar.",
 
   projectsSectionIntro:
-    "Seleção de trabalhos e linhas de produto em que já fui responsável ou co-responsável técnico — podes detalhar cada card conforme forem surgindo cases públicos.",
+    "Alguns eixos de trabalho em que participei de perto — de produto próprio a plataformas internas e, mais recentemente, IA aplicada a fluxos reais. Cada card é um resumo; numa conversa desdobro contexto, stack e o que faz sentido partilhar.",
 
   sectionMeta: {
     about: { kicker: "Apresentação", title: "Sobre mim" },

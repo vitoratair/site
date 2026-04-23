@@ -1,6 +1,6 @@
 import type { Messages } from "./pt";
 
-const WORKEDIN = "http://www.workedin.com.br";
+const WORKEDIN = "https://www.workedin.com.br";
 
 export const messages: Messages = {
   navLinks: [
@@ -63,7 +63,7 @@ export const messages: Messages = {
     "Services through a Brazil-registered LLC, delivered remotely for clients in Brazil or abroad whenever hiring a Brazil-based service provider works for you: fixed-scope projects, retainers, or technical discovery phases. I also support micro and small businesses with automation consulting — working through your process with you and spelling out what can realistically be automated. Below are the formats where I help the most.",
 
   projectsSectionIntro:
-    "Selected work and product lines where I led or co-led engineering — refine each card as public case studies become available.",
+    "A few threads I’ve worked on closely — from a founder-led product to internal platforms and, more recently, applied AI in real workflows. The cards are summaries; on a call I’ll unpack context, stack, and what actually shipped.",
 
   sectionMeta: {
     about: { kicker: "Intro", title: "About me" },
