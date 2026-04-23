@@ -18,7 +18,7 @@ export const messages = {
     snapshotKicker: "snapshot",
     snapshotTitle: "Engenharia · web & IA",
     snapshotLines: [
-      "Atuo como pessoa jurídica (CNPJ) no Brasil, aberto a projetos sob demanda: produto, backend e soluções com IA.",
+      "Atuo como pessoa jurídica (CNPJ) no Brasil. Projetos remotos no país ou em qualquer parte do mundo, desde que a tua organização consiga formalizar a contratação de um prestador de serviços no Brasil (PJ).",
       "Forte em Python/Django e em desenho de fluxos com LLMs, RAG e agentes com ferramentas.",
     ],
     tags: ["Python", "Django", "FastAPI", "TypeScript", "Angular", "LLM", "RAG", "Docker", "Postgres"],
@@ -36,7 +36,8 @@ export const messages = {
 
   site: {
     name: "Vitor Atair",
-    tagline: "Desenvolvedor de software · PJ no Brasil · projetos web, APIs e IA aplicada",
+    tagline:
+      "Desenvolvedor de software · PJ no Brasil · projetos remotos no Brasil e no exterior (contrato com prestador no Brasil) · web, APIs e IA aplicada",
     email: "vitor.ruts@gmail.com",
     links: {
       linkedin: "https://www.linkedin.com/pub/vitor-atair/49/606/572",
@@ -58,7 +59,7 @@ export const messages = {
   },
 
   servicesSectionIntro:
-    "Prestação de serviços por PJ no Brasil: projetos com escopo fechado, retainers ou fases de descoberta técnica. Também atendo micro e pequenas empresas com consultoria de automação — sentar contigo, perceber o processo no detalhe e desenhar o que dá para automatizar com retorno claro. Abaixo, os formatos em que mais costumo ajudar.",
+    "Prestação de serviços por PJ no Brasil, com entrega remota para clientes no país ou no exterior quando a contratação de um prestador no Brasil for viável: projetos com escopo fechado, retainers ou fases de descoberta técnica. Também atendo micro e pequenas empresas com consultoria de automação — sentar contigo, perceber o processo no detalhe e desenhar o que dá para automatizar com retorno claro. Abaixo, os formatos em que mais costumo ajudar.",
 
   projectsSectionIntro:
     "Seleção de trabalhos e linhas de produto em que já fui responsável ou co-responsável técnico — podes detalhar cada card conforme forem surgindo cases públicos.",
@@ -74,7 +75,7 @@ export const messages = {
 
   about: {
     intro:
-      "Sou desenvolvedor de software desde 2012. Hoje trabalho como PJ no Brasil e posso assumir projetos de desenvolvimento ponta a ponta ou em parceria com o teu time — com foco crescente em IA aplicada: agentes, integrações com LLM e produtos que precisam escalar com segurança.",
+      "Sou desenvolvedor de software desde 2012. Hoje trabalho como PJ no Brasil e posso assumir projetos de desenvolvimento ponta a ponta ou em parceria com o teu time — em remoto, com clientes no Brasil ou no exterior, sempre que a relação comercial puder ser com um prestador de serviços no Brasil. Foco crescente em IA aplicada: agentes, integrações com LLM e produtos que precisam escalar com segurança.",
     columns: [
       {
         title: "O que faço",

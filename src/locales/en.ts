@@ -20,7 +20,7 @@ export const messages: Messages = {
     snapshotKicker: "snapshot",
     snapshotTitle: "Engineering · web & AI",
     snapshotLines: [
-      "I work as a legal entity (CNPJ) in Brazil and take on scoped projects: product engineering, backends, and applied AI solutions.",
+      "I bill as a legal entity in Brazil (CNPJ). I work remotely with clients in Brazil or anywhere in the world, whenever your organization can contract a Brazil-based service provider.",
       "Strong in Python/Django and in designing LLM flows: RAG, tool-using agents, and production guardrails.",
     ],
     tags: ["Python", "Django", "FastAPI", "TypeScript", "Angular", "LLM", "RAG", "Docker", "Postgres"],
@@ -38,7 +38,8 @@ export const messages: Messages = {
 
   site: {
     name: "Vitor Atair",
-    tagline: "Software engineer · Brazil-based LLC · web, APIs, and applied AI",
+    tagline:
+      "Software engineer · Brazil-based LLC · remote work for Brazil & international clients (contracting via a Brazil-based provider) · web, APIs, and applied AI",
     email: "vitor.ruts@gmail.com",
     links: {
       linkedin: "https://www.linkedin.com/pub/vitor-atair/49/606/572",
@@ -60,7 +61,7 @@ export const messages: Messages = {
   },
 
   servicesSectionIntro:
-    "Services via LLC in Brazil: fixed-scope projects, retainers, or technical discovery phases. I also support micro and small businesses with automation consulting — working through your process with you and spelling out what can realistically be automated. Below are the formats where I help the most.",
+    "Services through a Brazil-registered LLC, delivered remotely for clients in Brazil or abroad whenever hiring a Brazil-based service provider works for you: fixed-scope projects, retainers, or technical discovery phases. I also support micro and small businesses with automation consulting — working through your process with you and spelling out what can realistically be automated. Below are the formats where I help the most.",
 
   projectsSectionIntro:
     "Selected work and product lines where I led or co-led engineering — refine each card as public case studies become available.",
@@ -76,7 +77,7 @@ export const messages: Messages = {
 
   about: {
     intro:
-      "I’ve been building software since 2012. Today I operate as an LLC (CNPJ) in Brazil and can own end-to-end delivery or embed with your team — with a growing focus on applied AI: agents, LLM integrations, and products that need to scale safely.",
+      "I’ve been building software since 2012. Today I operate as an LLC (CNPJ) in Brazil and can own end-to-end delivery or embed with your team — remotely, with clients in Brazil or internationally, whenever the commercial relationship can be with a Brazil-based service provider. Growing focus on applied AI: agents, LLM integrations, and products that need to scale safely.",
     columns: [
       {
         title: "What I do",
