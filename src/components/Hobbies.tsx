@@ -1,6 +1,8 @@
-import { hobbies } from "../data/content";
+import { useMessages } from "../i18n/context";
 
 export function Hobbies() {
+  const { hobbies } = useMessages();
+
   return (
     <section
       id="hobbies"

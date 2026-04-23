@@ -1,7 +1,9 @@
-import { resume, site } from "../data/content";
+import { useMessages } from "../i18n/context";
 import { SectionIntro } from "./SectionIntro";
 
 export function Resume() {
+  const { resume, sectionMeta, site } = useMessages();
+  const { kicker, title } = sectionMeta.resume;
   return (
     <section
       id="resume"
@@ -19,7 +21,7 @@ export function Resume() {
             />
             <div className="border-t border-slate-600/30 bg-slate-800/40 p-6">
               <p className="font-display text-xl font-semibold text-white">{resume.fullName}</p>
-              <p className="mt-1 bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-sm font-medium text-transparent">
+              <p className="mt-1 line-clamp-3 bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-xs font-medium leading-snug text-transparent sm:text-sm">
                 {site.tagline}
               </p>
               <div className="mt-4 flex justify-center gap-3">
@@ -53,7 +55,7 @@ export function Resume() {
           </div>
         </div>
         <div>
-          <SectionIntro kicker="CV" title="Complete resume" description={resume.blurb} />
+          <SectionIntro kicker={kicker} title={title} description={resume.blurb} />
           <a
             href={site.links.resume}
             target="_blank"
@@ -61,7 +63,7 @@ export function Resume() {
             className="btn-ai-primary mt-10 inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-white"
           >
             <DownloadIcon />
-            Download
+            {resume.downloadLabel}
           </a>
         </div>
       </div>

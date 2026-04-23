@@ -1,14 +1,16 @@
-import { timeline } from "../data/content";
+import { useMessages } from "../i18n/context";
 import { SectionIntro } from "./SectionIntro";
 
 export function Experience() {
+  const { sectionMeta, timeline } = useMessages();
+  const { kicker, title } = sectionMeta.experience;
   return (
     <section
       id="experience"
       className="scroll-mt-20 border-t border-slate-800/40 bg-slate-950/25 px-4 py-28 sm:px-6"
     >
       <div className="mx-auto max-w-3xl">
-        <SectionIntro kicker="Timeline" title="My professional career" />
+        <SectionIntro kicker={kicker} title={title} />
         <div className="mt-16 rounded-3xl border border-slate-600/30 bg-slate-800/30 px-5 py-10 shadow-lg shadow-black/20 backdrop-blur-sm sm:px-10 sm:py-12">
           <ol className="relative ml-2 space-y-14 border-l border-violet-400/30 pl-9 sm:ml-3 sm:pl-10">
             {timeline.map((entry, i) => (

@@ -1,14 +1,16 @@
-import { courses, coursesIntro } from "../data/content";
+import { useMessages } from "../i18n/context";
 import { SectionIntro } from "./SectionIntro";
 
 export function Courses() {
+  const { courses, coursesIntro, sectionMeta } = useMessages();
+  const { kicker, title } = sectionMeta.courses;
   return (
     <section
       id="courses"
       className="scroll-mt-20 border-t border-slate-600/25 bg-gradient-to-b from-slate-800/45 via-slate-800/30 to-slate-900/30 px-4 py-28 sm:px-6"
     >
       <div className="mx-auto max-w-6xl">
-        <SectionIntro kicker="Learning" title="Courses" description={coursesIntro} />
+        <SectionIntro kicker={kicker} title={title} description={coursesIntro} />
         <div className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-4">
           {courses.map((name, i) => (
             <div

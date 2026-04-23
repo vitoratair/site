@@ -1,10 +1,11 @@
-import { contact, site } from "../data/content";
+import { useMessages } from "../i18n/context";
 import { SectionIntro } from "./SectionIntro";
 
-const formEmail = import.meta.env.VITE_CONTACT_EMAIL || site.email;
-const formAction = `https://formsubmit.co/${encodeURIComponent(formEmail)}`;
-
 export function Contact() {
+  const { contact, contactForm, sectionMeta, site } = useMessages();
+  const formEmail = import.meta.env.VITE_CONTACT_EMAIL || site.email;
+  const formAction = `https://formsubmit.co/${encodeURIComponent(formEmail)}`;
+
   const nextUrl =
     typeof window !== "undefined" ? `${window.location.origin}${window.location.pathname}#contact` : "";
 
@@ -24,52 +25,57 @@ export function Contact() {
         aria-hidden
       />
       <div className="relative mx-auto max-w-2xl">
-        <SectionIntro kicker="Contact" title={contact.title} description={contact.intro} align="center" />
+        <SectionIntro
+          kicker={sectionMeta.contact.kicker}
+          title={contact.title}
+          description={contact.intro}
+          align="center"
+        />
       </div>
       <form
         action={formAction}
         method="POST"
         className="relative mx-auto mt-14 max-w-xl space-y-5 rounded-2xl border border-slate-500/35 bg-slate-800/65 p-6 shadow-xl shadow-black/25 backdrop-blur-md ring-1 ring-violet-400/15 sm:p-8"
       >
-        <input type="hidden" name="_subject" value="Message from portfolio" />
+        <input type="hidden" name="_subject" value={contactForm.subject} />
         <input type="hidden" name="_captcha" value="false" />
         {nextUrl ? <input type="hidden" name="_next" value={nextUrl} /> : null}
         <div>
           <label htmlFor="name" className="mb-2 block text-left text-sm font-medium text-slate-300">
-            Name
+            {contactForm.nameLabel}
           </label>
           <input
             id="name"
             name="name"
             type="text"
             required
-            placeholder="Your name"
+            placeholder={contactForm.namePlaceholder}
             className="w-full rounded-xl border border-slate-600/50 bg-slate-900/40 px-4 py-3 text-slate-100 placeholder:text-slate-500 outline-none ring-violet-500/25 focus:border-cyan-400/70 focus:ring-2 focus:ring-cyan-400/20"
           />
         </div>
         <div>
           <label htmlFor="email" className="mb-2 block text-left text-sm font-medium text-slate-300">
-            Email
+            {contactForm.emailLabel}
           </label>
           <input
             id="email"
             name="email"
             type="email"
             required
-            placeholder="Your email"
+            placeholder={contactForm.emailPlaceholder}
             className="w-full rounded-xl border border-slate-600/50 bg-slate-900/40 px-4 py-3 text-slate-100 placeholder:text-slate-500 outline-none ring-violet-500/25 focus:border-cyan-400/70 focus:ring-2 focus:ring-cyan-400/20"
           />
         </div>
         <div>
           <label htmlFor="message" className="mb-2 block text-left text-sm font-medium text-slate-300">
-            Message
+            {contactForm.messageLabel}
           </label>
           <textarea
             id="message"
             name="message"
             required
             rows={6}
-            placeholder="Your message"
+            placeholder={contactForm.messagePlaceholder}
             className="w-full resize-y rounded-xl border border-slate-600/50 bg-slate-900/40 px-4 py-3 text-slate-100 placeholder:text-slate-500 outline-none ring-violet-500/25 focus:border-cyan-400/70 focus:ring-2 focus:ring-cyan-400/20"
           />
         </div>
@@ -78,7 +84,7 @@ export function Contact() {
             type="submit"
             className="btn-ai-primary inline-flex w-full items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-white sm:w-auto"
           >
-            Send message
+            {contactForm.submit}
           </button>
         </p>
       </form>

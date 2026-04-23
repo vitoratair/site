@@ -1,6 +1,8 @@
-import { site } from "../data/content";
+import { useMessages } from "../i18n/context";
 
 export function Footer() {
+  const { site } = useMessages();
+
   return (
     <footer className="border-t border-slate-600/30 bg-gradient-to-b from-slate-900/95 to-slate-800/90 px-4 py-12 text-center sm:px-6">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-6">

@@ -1,4 +1,4 @@
-import { heroGraphPanel, site } from "../data/content";
+import { useMessages } from "../i18n/context";
 
 function NeuralMesh() {
   return (
@@ -32,6 +32,8 @@ function NeuralMesh() {
 }
 
 export function Hero() {
+  const { heroCopy, heroGraphPanel, site } = useMessages();
+
   return (
     <section
       id="home"
@@ -46,12 +48,14 @@ export function Hero() {
       <div className="relative mx-auto grid w-full max-w-6xl gap-14 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:items-center">
         <div className="text-center lg:text-left">
           <p className="font-mono text-[10px] font-medium uppercase tracking-[0.32em] text-cyan-400/85">
-            <span className="text-slate-500">[</span> portfolio <span className="text-slate-500">]</span>
+            <span className="text-slate-500">{heroCopy.badgeLeft}</span>
+            {heroCopy.badgeMid}
+            <span className="text-slate-500">{heroCopy.badgeRight}</span>
           </p>
           <h1 className="font-display mt-4 text-[clamp(2.5rem,6vw,4.5rem)] font-bold leading-[0.98] tracking-[-0.02em] text-white text-balance">
-            Hi, I&apos;m{" "}
+            {heroCopy.titleBefore}{" "}
             <span className="bg-gradient-to-r from-cyan-300 via-cyan-200 to-violet-300 bg-clip-text text-transparent">
-              Vitor
+              {heroCopy.name}
             </span>
           </h1>
           <p className="mx-auto mt-6 max-w-lg text-lg text-slate-300 lg:mx-0">{site.tagline}</p>
@@ -60,13 +64,13 @@ export function Hero() {
               href="#contact"
               className="btn-ai-primary inline-flex items-center justify-center rounded-full px-7 py-3.5 text-sm font-semibold text-white"
             >
-              Get in touch
+              {heroCopy.ctaPrimary}
             </a>
             <a
-              href="#experience"
+              href="#services"
               className="inline-flex items-center justify-center rounded-full border border-violet-500/25 bg-slate-950/40 px-7 py-3.5 text-sm font-medium text-slate-200 backdrop-blur-sm transition hover:border-cyan-400/35 hover:bg-violet-950/30 hover:text-white"
             >
-              My journey
+              {heroCopy.ctaSecondary}
             </a>
           </div>
         </div>
