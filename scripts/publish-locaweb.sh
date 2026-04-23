@@ -16,6 +16,14 @@ fi
 REMOTE_DIR="${LOCAWEB_REMOTE_DIR:-public_html}"
 METHOD="${LOCAWEB_PUBLISH_METHOD:-ftp}"
 
+# No FTP, o "cwd" inicial já é a pasta da conta — caminhos absolutos (/home/...) costumam dar 550.
+if [[ "$METHOD" != "rsync" ]] && [[ "$REMOTE_DIR" == /* ]]; then
+  echo "Erro: com FTP, LOCAWEB_REMOTE_DIR não pode ser um caminho absoluto (${REMOTE_DIR})." >&2
+  echo "      Usa só a pasta relativa ao login FTP, em geral: public_html" >&2
+  echo "      (ex.: no .env.locaweb → LOCAWEB_REMOTE_DIR=public_html)" >&2
+  exit 1
+fi
+
 if [[ ! -d dist ]] || [[ ! -f dist/index.html ]]; then
   echo "Erro: pasta dist/ em falta ou incompleta. Corre primeiro: npm run build (ou make build)" >&2
   exit 1
