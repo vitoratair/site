@@ -209,7 +209,6 @@ export const messages: Messages = {
   ],
 
   experience: {
-    fullName: "Vitor Atair da Silva",
     blurb:
       "I’ve been shipping real software for well over a decade. Rather than a résumé-style timeline with exact months, I prefer chunks: where I was, what kept us busy week to week, and what we actually built with. No end-customer names or confidential bits here — that stays for a private thread. If you need a PDF to attach to a proposal, it’s linked at the bottom.",
     pdfHref: "/CV_VITOR_ATAIR.pdf",

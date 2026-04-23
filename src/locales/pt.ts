@@ -207,7 +207,6 @@ export const messages = {
   ],
 
   experience: {
-    fullName: "Vitor Atair da Silva",
     blurb:
       "Há mais de uma década a meter código em produção. Em vez de uma linha do tempo com meses e vírgulas, gosto de pensar em blocos: onde estive, que problemas apareciam no dia a dia, e com que línguas e frameworks as coisas ganhavam forma. Não entram aqui nomes de clientes finais nem pormenores confidenciais — isso fica para conversa fechada. Se alguém precisar de um PDF para anexar a uma proposta, está no fim da página.",
     pdfHref: "/CV_VITOR_ATAIR.pdf",
