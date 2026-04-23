@@ -1,4 +1,4 @@
-import { site } from "../data/content";
+import { heroGraphPanel, site } from "../data/content";
 
 function NeuralMesh() {
   return (
@@ -70,28 +70,69 @@ export function Hero() {
             </a>
           </div>
         </div>
-        <div className="relative mx-auto hidden h-[min(420px,55vh)] w-full max-w-md lg:block" aria-hidden>
+        <div className="relative mx-auto hidden h-[min(420px,55vh)] w-full max-w-md lg:block">
           <NeuralMesh />
           <div className="absolute inset-0 rounded-3xl border border-cyan-400/20 bg-gradient-to-br from-slate-800/85 via-slate-900/90 to-violet-950/35 p-6 shadow-2xl shadow-violet-950/25 backdrop-blur-sm ring-1 ring-white/5">
-            <div className="flex h-full flex-col justify-between">
+            <div className="flex h-full min-h-0 flex-col justify-between gap-4">
               <div>
                 <p className="font-mono text-[10px] uppercase tracking-widest text-violet-300/70">graph_preview</p>
-                <div className="mt-4 space-y-3">
-                  <div className="h-2 w-12 rounded-full bg-gradient-to-r from-cyan-400/50 to-violet-400/40" />
-                  <div className="h-2 w-3/4 rounded-full bg-slate-700/80" />
-                  <div className="h-2 w-1/2 rounded-full bg-slate-800/90" />
+                <div className="mt-3 h-1.5 w-14 rounded-full bg-gradient-to-r from-cyan-400/50 to-violet-400/40" />
+              </div>
+
+              <div className="min-h-0 flex-1 overflow-hidden py-1">
+                <p className="font-mono text-[9px] uppercase tracking-wider text-slate-500">
+                  <span className="text-slate-600">//</span> {heroGraphPanel.snapshotKicker}
+                </p>
+                <p className="mt-2 font-display text-sm font-semibold leading-snug text-white">
+                  {heroGraphPanel.snapshotTitle}
+                </p>
+                {heroGraphPanel.snapshotLines.map((line) => (
+                  <p key={line} className="mt-2 text-[11px] leading-relaxed text-slate-400">
+                    {line}
+                  </p>
+                ))}
+                <div className="mt-3 flex flex-wrap gap-1.5">
+                  {heroGraphPanel.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="rounded border border-cyan-500/20 bg-cyan-500/[0.07] px-1.5 py-0.5 font-mono text-[9px] font-medium uppercase tracking-wide text-cyan-200/90"
+                    >
+                      {tag}
+                    </span>
+                  ))}
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-3">
-                <div className="rounded-2xl border border-cyan-500/20 bg-cyan-500/[0.04] p-4">
-                  <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-cyan-400/30 to-cyan-600/10" />
-                  <div className="mt-4 h-2 w-full rounded-full bg-slate-600/50" />
-                  <div className="mt-2 h-2 w-2/3 rounded-full bg-slate-700/50" />
+
+              <div className="grid shrink-0 grid-cols-2 gap-3">
+                <div className="rounded-2xl border border-cyan-500/20 bg-cyan-500/[0.04] p-3">
+                  <div className="flex items-start gap-2">
+                    <div className="mt-0.5 size-7 shrink-0 rounded-md bg-gradient-to-br from-cyan-400/35 to-cyan-700/10" />
+                    <div className="min-w-0">
+                      <p className="font-mono text-[9px] uppercase tracking-wide text-cyan-300/80">
+                        {heroGraphPanel.cards[0].title}
+                      </p>
+                      {heroGraphPanel.cards[0].lines.map((line) => (
+                        <p key={line} className="mt-1.5 text-[10px] leading-snug text-slate-400">
+                          {line}
+                        </p>
+                      ))}
+                    </div>
+                  </div>
                 </div>
-                <div className="rounded-2xl border border-violet-500/25 bg-violet-500/[0.04] p-4">
-                  <div className="h-8 w-8 rounded-full bg-gradient-to-br from-violet-400/30 to-violet-700/10" />
-                  <div className="mt-4 h-2 w-full rounded-full bg-slate-600/40" />
-                  <div className="mt-2 h-2 w-1/2 rounded-full bg-slate-700/50" />
+                <div className="rounded-2xl border border-violet-500/25 bg-violet-500/[0.04] p-3">
+                  <div className="flex items-start gap-2">
+                    <div className="mt-0.5 size-7 shrink-0 rounded-full bg-gradient-to-br from-violet-400/35 to-violet-700/10" />
+                    <div className="min-w-0">
+                      <p className="font-mono text-[9px] uppercase tracking-wide text-violet-300/80">
+                        {heroGraphPanel.cards[1].title}
+                      </p>
+                      {heroGraphPanel.cards[1].lines.map((line) => (
+                        <p key={line} className="mt-1.5 text-[10px] leading-snug text-slate-400">
+                          {line}
+                        </p>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

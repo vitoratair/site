@@ -1,3 +1,24 @@
+/** Copy for the hero `graph_preview` panel (edit freely). */
+export const heroGraphPanel = {
+  snapshotKicker: "snapshot",
+  snapshotTitle: "What I build",
+  snapshotLines: [
+    "Web platforms and APIs, with care for clarity and long-term maintainability.",
+    "Python & Django day to day; lower-level Linux when the problem needs it.",
+  ],
+  tags: ["Python", "Django", "TypeScript", "REST", "Git", "Linux"] as const,
+  cards: [
+    {
+      title: "Stack",
+      lines: ["Backend services", "Django & Python", "Postgres / SQL"],
+    },
+    {
+      title: "Scope",
+      lines: ["Product-shaped engineering", "Web + integrations", "Agile delivery"],
+    },
+  ],
+} as const;
+
 export const site = {
   name: "Vitor Atair",
   tagline: "Software developer",
