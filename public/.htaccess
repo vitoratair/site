@@ -1,0 +1,15 @@
+# Apache (hospedagem Linux Locaweb): este ficheiro vai para a raiz do site com `npm run build`.
+# Envie para public_html o *conteúdo* de dist/ (index.html, .htaccess, assets/, images/, etc.).
+
+DirectoryIndex index.html
+
+<IfModule mod_negotiation.c>
+  Options -MultiViews
+</IfModule>
+
+# Módulos ES e CSS — evita página em branco se .js for servido com MIME errado.
+<IfModule mod_mime.c>
+  AddType application/javascript js mjs
+  AddType text/css css
+  AddType image/svg+xml svg svgz
+</IfModule>
