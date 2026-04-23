@@ -1,12 +1,15 @@
 # Apache (hospedagem Linux Locaweb): este ficheiro vai para a raiz do site com `npm run build`.
 # Envie para public_html o *conteúdo* de dist/ (index.html, .htaccess, assets/, images/, etc.).
 #
-# HTTPS: no painel Locaweb ativa o certificado (ex.: Let's Encrypt) para o domínio; depois faz
-# novo deploy para subir este .htaccess. O redirecionamento abaixo só funciona com SSL ativo.
+# HTTPS direto na Locaweb: ativa SSL no painel e podes usar o redirecionamento abaixo.
+# Cloudflare (proxy laranja + SSL "Flexible"): o visitante usa HTTPS na Cloudflare; a Locaweb
+# recebe HTTP. O header CF-Connecting-IP existe nesses pedidos — não redirecionar para https
+# no Apache evita loop (ERR_TOO_MANY_REDIRECTS). Ativa "Always Use HTTPS" na Cloudflare.
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:CF-Connecting-IP} ^$
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>
 
