@@ -1,2 +1,6 @@
-application/config/constants.php
-constants.php
+node_modules
+dist
+.env
+.env.local
+*.local
+.DS_Store
