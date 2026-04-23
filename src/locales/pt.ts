@@ -7,7 +7,6 @@ export const messages = {
     { href: "#services", label: "Serviços" },
     { href: "#projects", label: "Projetos" },
     { href: "#skills", label: "Skills" },
-    { href: "#courses", label: "Cursos" },
     { href: "#experience", label: "Experiência" },
     { href: "#resume", label: "CV" },
     { href: "#hobbies", label: "Lazer" },
@@ -70,7 +69,6 @@ export const messages = {
     services: { kicker: "Contratação", title: "Serviços (PJ)" },
     projects: { kicker: "Portfólio", title: "Projetos & cases" },
     skills: { kicker: "Stack", title: "Principais competências" },
-    courses: { kicker: "Formação", title: "Cursos" },
     experience: { kicker: "Timeline", title: "Trajetória profissional" },
     resume: { kicker: "CV", title: "Currículo completo" },
     contact: { kicker: "Contato", title: "Vamos conversar?" },
@@ -205,11 +203,6 @@ export const messages = {
       body: "Branches curtas, revisão de código e releases previsíveis; fundo em Linux e rede útil para depurar integrações, containers e ambientes híbridos.",
     },
   ],
-
-  coursesIntro:
-    "Alguns cursos que moldaram como penso código, produto e colaboração — nem todos são de software, mas todos influenciaram o trabalho.",
-
-  courses: ["Clean Code", "Django", "Canvas", "CCNA"],
 
   timeline: [
     {

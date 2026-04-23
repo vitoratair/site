@@ -9,7 +9,6 @@ export const messages: Messages = {
     { href: "#services", label: "Services" },
     { href: "#projects", label: "Projects" },
     { href: "#skills", label: "Skills" },
-    { href: "#courses", label: "Courses" },
     { href: "#experience", label: "Experience" },
     { href: "#resume", label: "Résumé" },
     { href: "#hobbies", label: "Life" },
@@ -72,7 +71,6 @@ export const messages: Messages = {
     services: { kicker: "Engagement", title: "Services (LLC)" },
     projects: { kicker: "Portfolio", title: "Projects & cases" },
     skills: { kicker: "Stack", title: "Core skills" },
-    courses: { kicker: "Learning", title: "Courses" },
     experience: { kicker: "Timeline", title: "Professional path" },
     resume: { kicker: "CV", title: "Full résumé" },
     contact: { kicker: "Contact", title: "Let’s talk" },
@@ -207,11 +205,6 @@ export const messages: Messages = {
       body: "Short-lived branches, code review, and predictable releases; Linux and networking background that helps debug integrations, containers, and hybrid environments.",
     },
   ],
-
-  coursesIntro:
-    "Courses that shaped how I think about code, product, and collaboration — not all are pure software, but all influenced my work.",
-
-  courses: ["Clean Code", "Django", "Canvas", "CCNA"],
 
   timeline: [
     {
